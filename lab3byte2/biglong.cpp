@@ -3,9 +3,7 @@
 //
 
 #include "biglong.h"
-#include <cmath>
-#include <iostream>
-//#include <cstring>
+
 
 namespace laba3bit1 {
 
@@ -24,7 +22,6 @@ namespace laba3bit1 {
     };
 
     Biglong::Biglong(long parametr) {
-        //       std::cout << "я тут" << std::endl;
         int counter = 0;
         long parametr_copy = parametr;
         if (parametr > 0) {
@@ -33,13 +30,17 @@ namespace laba3bit1 {
             Biglong::value[0] = '9';
             parametr_copy = -parametr_copy;
         }
-        while (parametr_copy > 0) {
-            //     std::cout << "изменяю: " << MAX_LENGTH - counter << " НА " << parametr_copy % 10 << std::endl;
-            if (MAX_LENGTH - counter < 1)
-                throw "подано слишком большое значение long";
-            Biglong::value[MAX_LENGTH - counter] = num_to_char(parametr_copy % 10);
-            parametr_copy = parametr_copy / 10;
-            ++counter;
+        try {
+            while (parametr_copy > 0) {
+                if (MAX_LENGTH - counter < 1)
+                    throw std::range_error("подано слишком большое значение long");
+                Biglong::value[MAX_LENGTH - counter] = num_to_char(int(parametr_copy % 10));
+                parametr_copy = parametr_copy / 10;
+                ++counter;
+            }
+        }
+        catch(std::range_error &error) {
+            std::cerr << error.what() << std::endl;
         }
         Biglong::length = counter;
         for (int i = 1; i <= MAX_LENGTH - counter; ++i) {
@@ -50,8 +51,6 @@ namespace laba3bit1 {
 
     Biglong::Biglong(const char *char_value) {
         int i = int(strlen(char_value)), j = 0;
-        //    std::cout << i << std::endl;
-
 
         if (char_value[0] == '-') {
             value[0] = '9';
@@ -59,23 +58,38 @@ namespace laba3bit1 {
             --i;
         } else {
             value[0] = '0';
-            if (((int) char_value[0] < '0') || ((int) char_value[0] > '9')) {
-                throw "Попытка инициализировать класс некорректной строкой";
+            try {
+                if ((char_value[0] < '0') || (char_value[0] > '9')) {
+                    throw std::range_error("Попытка инициализировать класс некорректной строкой");
+                }
+            }
+            catch(std::range_error &error) {
+                std::cerr << error.what() << std::endl;
             }
         }
-        if (i > MAX_LENGTH)
-            throw "попытка присвоить объекту слишком длинной строки";
+        try {
+            if (i > MAX_LENGTH)
+                throw std::range_error("попытка присвоить объекту слишком длинной строки");
+        }
+        catch (std::range_error &error) {
+            std::cerr << error.what() << std::endl;
+        }
         Biglong::length = i;
-        while (char_value[j] != '\0') {
-            if (((int) char_value[j] >= '0') & ((int) char_value[j] <= '9')) {
-                value[MAX_LENGTH - i + 1] = char_value[j];
-                --i;
-                ++j;
+        try {
+            while (char_value[j] != '\0') {
+                if ((char_value[j] >= '0') & (char_value[j] <= '9')) {
+                    value[MAX_LENGTH - i + 1] = char_value[j];
+                    --i;
+                    ++j;
 
-            } else {
-                std::cout << "В строке встретился не числовой символ" << std::endl;
-                throw "В строке встретился не числовой символ";
+                } else {
+                    std::cout << "В строке встретился не числовой символ" << std::endl;
+                    throw std::range_error("В строке встретился не числовой символ");
+                }
             }
+        }
+        catch (std::range_error &error) {
+            std::cerr << error.what() << std::endl;
         }
         for (int i = 1; i <= MAX_LENGTH - Biglong::length; ++i) {
             Biglong::value[i] = '0';
@@ -90,19 +104,22 @@ namespace laba3bit1 {
     }
 
     void laba3bit1::Biglong::multi10() {
-        if (Biglong::value[1] == '0') {
-            for (int i = 1; i < MAX_LENGTH; ++i) {
-                Biglong::value[i] = Biglong::value[i + 1];
-            }
-            Biglong::value[MAX_LENGTH] = '0';
-        } else
-            throw "невозможно выполнить умножение из-за опасности переполнения стека";
+        try {
+            if (Biglong::value[1] == '0') {
+                for (int i = 1; i < MAX_LENGTH; ++i) {
+                    Biglong::value[i] = Biglong::value[i + 1];
+                }
+                Biglong::value[MAX_LENGTH] = '0';
+            } else
+                throw std::range_error("невозможно выполнить умножение из-за опасности переполнения стека");
+        }
+        catch (std::range_error &error) {
+            std::cerr << error.what() << std::endl;
+        }
     }
 
 
 
-
-//const laba3bit1::Biglong operator~ () const {
 
 //----------------------------------------------------------------------тут пошла часть с перегрузками-----------------
 
@@ -113,7 +130,7 @@ namespace laba3bit1 {
         int i = 1;
         if (biglong.get_one_char(0) == '9')
             stream << "-";
-        while (i <= biglong.get_max_value()) {
+        while (i <= biglong.get_max_length()) {
             stream << biglong.get_one_char(i);
             ++i;
         }
@@ -123,42 +140,47 @@ namespace laba3bit1 {
 
 
     std::istream &operator>>(std::istream &istream, laba3bit1::Biglong &biglong) {
-        for (int k = 1; k <= biglong.get_max_value(); ++k) {
-            biglong.set_one_char(k, 0);
-        }
-        std::cout << "tut" << std::endl;
-        char streamer[biglong.get_max_value() + 1];
-        istream
-                >> streamer;                                                //здесь может быть считывание нормальной строки
-        int i = int(strlen(streamer)), j = 0;
-        std::cout << "i = " << i << std::endl;
-        if (i > biglong.get_max_value())
-            throw "попытка присвоить объекту слишком длинной строки";
-        if (streamer[0] == '-') {
-            biglong.set_one_char(0, 1);
-            j++;
-            --i;
-        } else {
-            biglong.set_one_char(0, 0);
-            if (((int) streamer[0] < '0') || ((int) streamer[0] > '9')) {
-                throw "Попытка инициализировать класс некорректной строкой";
+        try {
+            for (int k = 1; k <= biglong.get_max_length(); ++k) {
+                biglong.set_one_char(k, 0);
             }
-        }
-        biglong.set_length(i);
-        while (streamer[j] != '\0') {
-            if (((int) streamer[j] >= '0') & ((int) streamer[j] <= '9')) {
-                std::cout << "заменяю: " << biglong.get_max_value() - i + 1 << " на: " << streamer[j] << std::endl;
-                biglong.set_one_char(biglong.get_max_value() - i + 1, char_to_num(streamer[j]));
+            std::cout << "tut" << std::endl;
+            char streamer[biglong.get_max_length() + 1];
+            istream
+                    >> streamer;                                                //здесь может быть считывание нормальной строки
+            int i = int(strlen(streamer)), j = 0;
+            std::cout << "i = " << i << std::endl;
+            if (i > biglong.get_max_length())
+                throw std::range_error("попытка присвоить объекту слишком длинной строки");
+            if (streamer[0] == '-') {
+                biglong.set_one_char(0, 1);
+                j++;
                 --i;
-                ++j;
             } else {
-                std::cout << "В строке встретился не числовой символ" << std::endl;
-                throw "В строке встретился не числовой символ";
+                biglong.set_one_char(0, 0);
+                if ((streamer[0] < '0') || (streamer[0] > '9')) {
+                    throw std::range_error("Попытка инициализировать класс некорректной строкой");
+                }
             }
+            biglong.set_length(i);
+            while (streamer[j] != '\0') {
+                if ((streamer[j] >= '0') & (streamer[j] <= '9')) {
+                    std::cout << "заменяю: " << biglong.get_max_length() - i + 1 << " на: " << streamer[j] << std::endl;
+                    biglong.set_one_char(biglong.get_max_length() - i + 1, char_to_num(streamer[j]));
+                    --i;
+                    ++j;
+                } else {
+                    std::cout << "В строке встретился не числовой символ" << std::endl;
+                    throw std::range_error("В строке встретился не числовой символ");
+                }
+            }
+        }
+        catch (std::range_error &error) {
+            std::cerr << error.what() << std::endl;
         }
         return istream;
-    }
 
+    }
 
     const Biglong Biglong::operator~() const {                      //здесь еще нужно написать прибавление единички
         Biglong newest(*this);
@@ -182,8 +204,13 @@ namespace laba3bit1 {
             ostatok = a / 10;
             --i;
         }
-        if ((i < 1) & (ostatok != 0)) {
-            throw "переполнение стека";
+        try {
+            if ((i < 1) & (ostatok != 0)) {
+                throw std::range_error("переполнение стека");
+            }
+        }
+        catch (std::range_error &error) {
+            std::cerr << error.what() << std::endl;
         }
         return *this;
     }
@@ -229,6 +256,18 @@ namespace laba3bit1 {
         Biglong::value[number] = num_to_char(value);
     }
 
+    void Biglong::set_length(int new_length) {
+        try {
+            if (new_length < 0)
+                throw std::range_error("Неприемлимая длина строки");
+            Biglong::length = new_length;
+        }
+        catch (std::range_error &error){
+            std::cerr << error.what() << std::endl;
+        }
+    }
+
+
     const Biglong Biglong::operator=(const Biglong &argument) {
         for (int i = 0; i <= MAX_LENGTH; ++i) {
             (*this).value[i] = argument.value[i];
@@ -237,57 +276,14 @@ namespace laba3bit1 {
     }
 
 
+
+
     char num_to_char(int num) {
-        switch (num) {
-            case 0:
-                return '0';
-            case 1:
-                return '1';
-            case 2:
-                return '2';
-            case 3:
-                return '3';
-            case 4:
-                return '4';
-            case 5:
-                return '5';
-            case 6:
-                return '6';
-            case 7:
-                return '7';
-            case 8:
-                return '8';
-            case 9:
-                return '9';
-        }
-        return '-';
+        return num + '0';
     }
 
-    int char_to_num(char a) {
-        switch (a) {
-            case '0':
-                return 0;
-            case '1':
-                return 1;
-            case '2':
-                return 2;
-            case '3':
-                return 3;
-            case '4':
-                return 4;
-            case '5':
-                return 5;
-            case '6':
-                return 6;
-            case '7':
-                return 7;
-            case '8':
-                return 8;
-            case '9':
-                return 9;
-        }
-        return
-                '-';
+    int char_to_num(char char_a) {
+        return char_a - '0';
     }
 
 
@@ -304,7 +300,7 @@ namespace laba3bit1 {
             //printf("buff = %s\n",buf);
             if (n < 0) {
                 free(ptr);
-                ptr = NULL;
+                ptr = nullptr;
                 continue;
             }
             if (n == 0)

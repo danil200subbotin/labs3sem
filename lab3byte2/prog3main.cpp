@@ -1,4 +1,4 @@
-#include <iostream>
+
 #include "biglong.h"
 
 const char* messages1_0[] = {"Что вы хотите сделать?",
@@ -76,7 +76,7 @@ int main() {
                 char* stroka;
                 std::cout << "Введите строку" << std::endl;
                 stroka = laba3bit1::readln();
-                if (strlen(stroka) > main_tester.get_max_value()) {
+                if (strlen(stroka) > main_tester.get_max_length()) {
                     std::cout << "Вы ввели слишком длинную строку, возвращаюсь в начало меню" << std::endl;
                     continue;
                 }
@@ -110,7 +110,7 @@ int main() {
             std::cout << "Введите строку, с помощью которой будет инициализирован второй объект" << std::endl;
             char* stroka;
             stroka = laba3bit1::readln();
-            if (strlen(stroka) > main_tester.get_max_value()) {
+            if (strlen(stroka) > main_tester.get_max_length()) {
                 std::cout << "Вы ввели слишком длинную строку, возвращаюсь в начало меню" << std::endl;
                 continue;
             }
