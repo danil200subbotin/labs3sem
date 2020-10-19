@@ -13,7 +13,6 @@ namespace laba3bit1 {
         }
     }
 
-
     Biglong::Biglong() : length(0) {
         for (int i = 0; i <= MAX_LENGTH; ++i) {
             value[i] = '0';
@@ -41,6 +40,7 @@ namespace laba3bit1 {
         }
         catch(std::range_error &error) {
             std::cerr << error.what() << std::endl;
+            throw "this string for google tests";
         }
         Biglong::length = counter;
         for (int i = 1; i <= MAX_LENGTH - counter; ++i) {
@@ -51,8 +51,6 @@ namespace laba3bit1 {
 
     Biglong::Biglong(const char *char_value) {
         int i = int(strlen(char_value)), j = 0;
-        //    std::cout << i << std::endl;
-
 
         if (char_value[0] == '-') {
             value[0] = '9';
@@ -67,6 +65,7 @@ namespace laba3bit1 {
             }
             catch(std::range_error &error) {
                 std::cerr << error.what() << std::endl;
+                throw "this string for google tests";
             }
         }
         try {
@@ -75,6 +74,7 @@ namespace laba3bit1 {
         }
         catch (std::range_error &error) {
             std::cerr << error.what() << std::endl;
+            throw "this string for google tests";
         }
         Biglong::length = i;
         try {
@@ -92,6 +92,7 @@ namespace laba3bit1 {
         }
         catch (std::range_error &error) {
             std::cerr << error.what() << std::endl;
+            throw "this string for google tests";
         }
         for (int i = 1; i <= MAX_LENGTH - Biglong::length; ++i) {
             Biglong::value[i] = '0';
@@ -117,6 +118,7 @@ namespace laba3bit1 {
         }
         catch (std::range_error &error) {
             std::cerr << error.what() << std::endl;
+            throw "this string for google tests";
         }
 
     }
@@ -175,6 +177,7 @@ namespace laba3bit1 {
         }
         catch (std::range_error &error) {
             std::cerr << error.what() << std::endl;
+            throw "this string for google tests";
         }
     }
 
@@ -208,6 +211,7 @@ namespace laba3bit1 {
         }
         catch (std::range_error &error) {
             std::cerr << error.what() << std::endl;
+            throw "this string for google tests";
         }
         return *this;
     }
@@ -260,6 +264,7 @@ namespace laba3bit1 {
         }
         catch (std::range_error &error) {
             std::cerr << error.what() << std::endl;
+            throw "this string for google tests";
         }
         Biglong::value[number] = num_to_char(value);
     }
@@ -273,6 +278,7 @@ namespace laba3bit1 {
         }
         catch (std::range_error &error){
             std::cerr << error.what() << std::endl;
+            throw "this string for google tests";
         }
     }
 

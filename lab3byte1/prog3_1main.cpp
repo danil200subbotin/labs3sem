@@ -26,7 +26,7 @@ int main() {
     int choice1_2 = 0;
     std::cout << "Добро пожаловать в диалоговую тестировочную программу класса BigLong" << std::endl;
     laba3bit1::Biglong main_tester;               //объект по умолчанию
-    while (1) {
+    while (true) {
         choice1_0 = -1;
         choice1_1 = 0;
         choice1_2 = 0;

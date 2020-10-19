@@ -9,7 +9,7 @@
 #include <stdexcept>
 
 namespace laba3bit1 {
-
+    const int MAX_LENGTH = 10;
 
     class Biglong {
     private:
