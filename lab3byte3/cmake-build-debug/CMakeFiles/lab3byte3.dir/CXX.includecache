@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/danilmorozov/Desktop/labsgit/lab3byte3/biglong.cpp
+biglong.h
+/Users/danilmorozov/Desktop/labsgit/lab3byte3/biglong.h
+
+/Users/danilmorozov/Desktop/labsgit/lab3byte3/biglong.h
+iostream
+-
+cmath
+-
+stdexcept
+-
+

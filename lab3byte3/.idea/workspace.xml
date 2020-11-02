@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="lab3byte3" targetName="gtest" />
+      <config projectName="lab3byte3" targetName="lab3byte1" />
+      <config projectName="lab3byte3" targetName="gmock_main" />
+      <config projectName="lab3byte3" targetName="gtest_main" />
+      <config projectName="lab3byte3" targetName="gmock" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6d1f40cb-171d-4e90-893e-85f2741bd371" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../byte3/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/biglong.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/biglong.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testwithgoogle.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3byte1/biglong.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3byte1/biglong.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3byte1/cmake-build-debug/CMakeFiles/lab3byte1.dir/biglong.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3byte1/cmake-build-debug/CMakeFiles/lab3byte1.dir/biglong.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3byte1/cmake-build-debug/CMakeFiles/lab3byte1.dir/testwithgoogle.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3byte1/cmake-build-debug/CMakeFiles/lab3byte1.dir/testwithgoogle.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3byte1/cmake-build-debug/lab3byte1" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3byte1/cmake-build-debug/lab3byte1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3byte1/testwithgoogle.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3byte1/testwithgoogle.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3byte2/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3byte2/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3byte2/biglong.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3byte2/biglong.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3byte2/biglong.h" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3byte2/biglong.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab3byte2/prog3main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../lab3byte2/prog3main.cpp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1jVOqmvaHZZ8Pj15gq4XYofPVci" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.advertisement.text.has.clang-format" value="true" />
+    <property name="cf.first.check.clang-format" value="false" />
+  </component>
+  <component name="RunManager" selected="Google Test.All Tests">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All Tests" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" nameIsGenerated="true" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lab3byte3" TARGET_NAME="lab3byte1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="lab3byte3" RUN_TARGET_NAME="lab3byte1" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gmock" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lab3byte3" TARGET_NAME="gmock" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gmock_main" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lab3byte3" TARGET_NAME="gmock_main" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gtest" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lab3byte3" TARGET_NAME="gtest" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="gtest_main" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lab3byte3" TARGET_NAME="gtest_main" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="lab3byte1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lab3byte3" TARGET_NAME="lab3byte1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="lab3byte3" RUN_TARGET_NAME="lab3byte1">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="new" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="lab3byte3" TARGET_NAME="lab3byte1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="lab3byte3" RUN_TARGET_NAME="lab3byte1">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.lab3byte1" />
+      <item itemvalue="CMake Application.new" />
+      <item itemvalue="CMake Application.gmock" />
+      <item itemvalue="CMake Application.gmock_main" />
+      <item itemvalue="CMake Application.gtest" />
+      <item itemvalue="CMake Application.gtest_main" />
+      <item itemvalue="Google Test.All Tests" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6d1f40cb-171d-4e90-893e-85f2741bd371" name="Default Changelist" comment="" />
+      <created>1603885986726</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603885986726</updated>
+      <workItem from="1603885990094" duration="2000" />
+      <workItem from="1603886135627" duration="1266000" />
+      <workItem from="1603889584017" duration="370000" />
+      <workItem from="1603889994197" duration="11475000" />
+      <workItem from="1604094263912" duration="6908000" />
+      <workItem from="1604142685230" duration="1014000" />
+      <workItem from="1604152902809" duration="5472000" />
+      <workItem from="1604245659263" duration="651000" />
+      <workItem from="1604273192342" duration="1609000" />
+      <workItem from="1604274811406" duration="622000" />
+      <workItem from="1604277921476" duration="1776000" />
+      <workItem from="1604279824519" duration="1329000" />
+      <workItem from="1604281296053" duration="4470000" />
+      <workItem from="1604299545721" duration="176000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604281530213">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1604281530213" />
+    <state x="582" y="210" key="#xdebugger.XInspectDialog" timestamp="1604280656775">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="582" y="210" key="#xdebugger.XInspectDialog/0.0.1440.900@0.0.1440.900" timestamp="1604280656775" />
+    <state width="465" height="466" key="DebuggerActiveHint" timestamp="1604101856836">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="465" height="466" key="DebuggerActiveHint/0.0.1440.900@0.0.1440.900" timestamp="1604101856836" />
+    <state width="1398" height="85" key="GridCell.Tab.0.bottom" timestamp="1604299721327">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="85" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1604299721327" />
+    <state width="1398" height="85" key="GridCell.Tab.0.center" timestamp="1604299721326">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="85" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1604299721326" />
+    <state width="1398" height="85" key="GridCell.Tab.0.left" timestamp="1604299721325">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="85" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1604299721325" />
+    <state width="1398" height="85" key="GridCell.Tab.0.right" timestamp="1604299721326">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="85" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1604299721326" />
+    <state width="1398" height="85" key="GridCell.Tab.1.bottom" timestamp="1604299721331">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="85" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1604299721331" />
+    <state width="1398" height="85" key="GridCell.Tab.1.center" timestamp="1604299721328">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="85" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1604299721328" />
+    <state width="1398" height="85" key="GridCell.Tab.1.left" timestamp="1604299721327">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="85" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1604299721327" />
+    <state width="1398" height="85" key="GridCell.Tab.1.right" timestamp="1604299721330">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="85" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1604299721330" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1603898224231">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1603898224231" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="CMakeRunConfiguration">
+        <watch expression="result_copy.value" />
+        <watch expression="result_copy.value" language="ObjectiveC" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
