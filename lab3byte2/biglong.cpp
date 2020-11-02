@@ -189,10 +189,45 @@ namespace laba3bit1 {
             for (int i = 1; i <= MAX_LENGTH; ++i) {
                 newest.set_one_char(i, 9 - char_to_num(newest.get_one_char(i)));
             }
-            ++newest;
+            int a = 0, ostatok = 1, i = MAX_LENGTH;         //часть с инкрементом
+            while ((i > 0) & (ostatok > 0)) {
+                a = char_to_num(newest.get_one_char(i));
+                a = ostatok + a;
+                newest.set_one_char(i, a % 10);
+                ostatok = a / 10;
+                --i;
+            }
+            if ((i < 1) & (ostatok != 0)) {
+                throw std::range_error("переполнение стека");
+            }
+            return newest;
         }
-        return newest;
-    };
+    }
+
+    /*
+     Biglong newest(*this);
+        if ((newest.get_one_char(0) == '9') || (newest.get_one_char(0) == '1')) {
+            newest.set_one_char(0, 9);
+            for (int i = 1; i <= MAX_LENGTH; ++i) {
+                newest.set_one_char(i, 9 - char_to_num(newest.get_one_char(i)));
+            }
+            int a = 0, ostatok = 1, i = MAX_LENGTH;         //часть с инкрементом
+            while ((i > 0) & (ostatok > 0)) {
+                a = char_to_num(newest.get_one_char(i));
+                a = ostatok + a;
+                newest.set_one_char(i, a % 10);
+                ostatok = a / 10;
+                --i;
+            }
+            if ((i < 1) & (ostatok != 0)) {
+                throw std::range_error("переполнение стека");
+            }
+            return newest;
+        }
+     */
+
+
+
 
 
     Biglong &Biglong::operator++() {
@@ -216,6 +251,8 @@ namespace laba3bit1 {
     }
 
 
+
+
     const Biglong Biglong::operator+(const Biglong &argument) const {
         Biglong result(*this);
         result = ~result;
@@ -229,18 +266,13 @@ namespace laba3bit1 {
             result.set_one_char(i, a % 10);
             over = a / 10;
         }
-        //     std::cout << result.get_one_char(0) << "result0" << std::endl;
-        //      std::cout << argument_copy.get_one_char(0) << "a_to_copy0" << std::endl;
         if (result.get_one_char(0) != '0') {
-            result.set_one_char(0, 9);
-            for (int i = 1; i <= MAX_LENGTH; ++i) {
-                result.set_one_char(i, 9 - char_to_num(result.get_one_char(i)));
-            }
-            ++result;
-
+            result = ~result;
         }
         return result;
     }
+
+
 
     const Biglong Biglong::operator-(const Biglong &argument) const {
         Biglong argument_copy = argument;

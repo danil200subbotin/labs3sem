@@ -29,18 +29,13 @@ namespace laba3bit1 {
             Biglong::value[0] = '9';
             parametr_copy = -parametr_copy;
         }
-        try {
-            while (parametr_copy > 0) {
-                if (MAX_LENGTH - counter < 1)
-                    throw std::range_error("подано слишком большое значение long");
-                Biglong::value[MAX_LENGTH - counter] = num_to_char(int(parametr_copy % 10));
-                parametr_copy = parametr_copy / 10;
-                ++counter;
-            }
-        }
-        catch(std::range_error &error) {
-            std::cerr << error.what() << std::endl;
-            throw "this string for google tests";
+
+        while (parametr_copy > 0) {
+            if (MAX_LENGTH - counter < 1)
+                throw std::range_error("подано слишком большое значение long");
+            Biglong::value[MAX_LENGTH - counter] = num_to_char(int(parametr_copy % 10));
+            parametr_copy = parametr_copy / 10;
+            ++counter;
         }
         Biglong::length = counter;
         for (int i = 1; i <= MAX_LENGTH - counter; ++i) {
@@ -143,10 +138,8 @@ namespace laba3bit1 {
             for (int k = 1; k <= (*this).get_max_length(); ++k) {
                 (*this).set_one_char(k, 0);
             }
-            std::cout << "tut" << std::endl;
             char streamer[(*this).get_max_length() + 1];
-            istream
-                    >> streamer;                                                //здесь может быть считывание нормальной строки
+            istream >> streamer;
             int i = int(strlen(streamer)), j = 0;
             std::cout << "i = " << i << std::endl;
             if (i > (*this).get_max_length())
@@ -182,20 +175,31 @@ namespace laba3bit1 {
     }
 
 
-    Biglong Biglong::get_addit_code() const {                      //здесь еще нужно написать прибавление единички
+    Biglong Biglong::get_addit_code() const {
         Biglong newest(*this);
         if ((newest.get_one_char(0) == '9') || (newest.get_one_char(0) == '1')) {
             newest.set_one_char(0, 9);
             for (int i = 1; i <= MAX_LENGTH; ++i) {
                 newest.set_one_char(i, 9 - char_to_num(newest.get_one_char(i)));
             }
-            newest = newest.increment();
+            int a = 0, ostatok = 1, i = MAX_LENGTH;         //часть с инкрементом
+            while ((i > 0) & (ostatok > 0)) {
+                a = char_to_num(newest.get_one_char(i));
+                a = ostatok + a;
+                newest.set_one_char(i, a % 10);
+                ostatok = a / 10;
+                --i;
+            }
+            if ((i < 1) & (ostatok != 0)) {
+                throw std::range_error("переполнение стека");
+            }
+            return newest;
         }
-        return newest;
-    };
+
+    }
 
 
-    Biglong &Biglong::increment() {
+ /*   Biglong &Biglong::increment() {                                             //инкремент рудимент
         int a = 0, ostatok = 1, i = MAX_LENGTH;
         while ((i > 0) & (ostatok > 0)) {
             a = char_to_num(value[i]);
@@ -204,17 +208,12 @@ namespace laba3bit1 {
             ostatok = a / 10;
             --i;
         }
-        try {
-            if ((i < 1) & (ostatok != 0)) {
-                throw std::range_error("переполнение стека");
-            }
-        }
-        catch (std::range_error &error) {
-            std::cerr << error.what() << std::endl;
-            throw "this string for google tests";
+        if ((i < 1) & (ostatok != 0)) {
+            throw std::range_error("переполнение стека");
         }
         return *this;
     }
+ */
 
 
     Biglong Biglong::plus(const Biglong &argument) const {
@@ -230,15 +229,8 @@ namespace laba3bit1 {
             result.set_one_char(i, a % 10);
             over = a / 10;
         }
-        //     std::cout << result.get_one_char(0) << "result0" << std::endl;
-        //      std::cout << argument_copy.get_one_char(0) << "a_to_copy0" << std::endl;
         if (result.get_one_char(0) != '0') {
-            result.set_one_char(0, 9);
-            for (int i = 1; i <= MAX_LENGTH; ++i) {
-                result.set_one_char(i, 9 - char_to_num(result.get_one_char(i)));
-            }
-            result = result.increment();
-
+            result = result.get_addit_code();
         }
         return result;
     }
@@ -255,7 +247,7 @@ namespace laba3bit1 {
 
     void Biglong::set_one_char(int number, int value) {
         try {
-            if ((number > MAX_LENGTH) || (number < 1)) {
+            if ((number > MAX_LENGTH) || (number < 0)) {
                 throw std::range_error("Попытка отбащения к несуществующему элементу");
             }
             if (value < 0) {

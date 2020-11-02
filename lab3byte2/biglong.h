@@ -27,7 +27,8 @@ namespace laba3bit1 {
         int get_max_length() const { return MAX_LENGTH; };
         //сеттеры
         void set_one_char(int number, int value);    //переделать назначение строки
-        void set_length(int new_length);        void div10();    //выполнение операции “уменьшения числа в десять раз” (деление на 10 нацело)ы
+        void set_length(int new_length);
+        void div10();    //выполнение операции “уменьшения числа в десять раз” (деление на 10 нацело)ы
         void multi10();  //выполнение операции “увеличения числа в десять раз”
         //часть с перегрузками
         friend std::ostream &operator<<(std::ostream &ostream, const Biglong &biglong); //выввод в входной поток

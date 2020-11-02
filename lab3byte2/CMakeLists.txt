@@ -1,7 +1,12 @@
-cmake_minimum_required(VERSION 3.17)
-project(lab3byte1)
+ cmake_minimum_required(VERSION 3.17)
+ project(lab3byte1)
 
-set(CMAKE_CXX_STANDARD 20)
+ include_directories(lib/googletest-master/googletest/include)
+ include_directories(lib/googletest-master/googlemock/include)
 
-add_executable(lab3byte1 prog3main.cpp biglong.cpp biglong.h)
+ set(CMAKE_CXX_STANDARD 20)
 
+ add_executable(lab3byte1 biglong.cpp biglong.h testwithgoogle.cpp)
+
+ add_subdirectory(lib/googletest-master)
+ target_link_libraries(lab3byte1 gtest gtest_main)

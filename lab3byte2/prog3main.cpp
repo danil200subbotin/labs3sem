@@ -114,9 +114,12 @@ int main() {
                 std::cout << "Вы ввели слишком длинную строку, возвращаюсь в начало меню" << std::endl;
                 continue;
             }
+
             laba3bit1::Biglong newest(stroka);
             if (choice1_2 == 1) {
+                std::cout << "Результат данных вычислений1 = " << main_tester << std::endl;
                 newest = main_tester + newest;
+                std::cout << "Результат данных вычислений2 = " << main_tester << std::endl;
             }
             if (choice1_2 == 2) {
                 newest = newest - main_tester;
@@ -129,3 +132,20 @@ int main() {
     }
 
 }
+
+
+
+/*
+ cmake_minimum_required(VERSION 3.17)
+project(lab3byte1)
+
+include_directories(lib/googletest-master/googletest/include)
+include_directories(lib/googletest-master/googlemock/include)
+
+set(CMAKE_CXX_STANDARD 20)
+
+add_executable(lab3byte2 biglong.cpp biglong.h prog3main.cpp)
+
+add_subdirectory(lib/googletest-master)
+target_link_libraries(lab3byte1 gtest gtest_main)
+ */
