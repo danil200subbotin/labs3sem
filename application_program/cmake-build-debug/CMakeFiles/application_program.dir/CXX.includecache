@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/danilmorozov/Desktop/labsgit/application_program/main.cpp
+utils.h
+/Users/danilmorozov/Desktop/labsgit/application_program/utils.h
+iostream
+-
+
+/Users/danilmorozov/Desktop/labsgit/application_program/utils.h
+utility
+-
+ostream
+-
+initializer_list
+-
+random
+-
+algorithm
+-
+stdexcept
+-
+string
+-
+
