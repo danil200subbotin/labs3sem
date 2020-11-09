@@ -1,5 +1,4 @@
 #include "utils.h"
-#include <iostream>
 
 using namespace lab3;
 
@@ -9,7 +8,9 @@ int main (){
     std::cout << "Я придумал новую игру 'Азартное домино', правила расскажу устно" << std::endl;
     std::cout << "Сколько человек будет участвовать в игре? (1 < x)" << std::endl;
     int a = 0;
-    std::cin >> a;
+    while (a <= 1) {
+        getNum(a);
+    }
     Domino *players[a];
     int rate[a];
     int summ[a];
@@ -19,10 +20,10 @@ int main (){
         rate[i] = 0;
         players[i] = new Domino(20);
     }
-   // std::cout << "test {" << players[0]->operator[](0).getLeft() <<", " << players[0]->operator[](0).getRight() << "}"<<std::endl;
     std::cout << "Ставим первые ставки" << std::endl;
 
     bool ender = true;
+    int ender_chek = -1;
     int counter = 1;
     int bank = 0;
     int tester = 0;
@@ -33,8 +34,8 @@ int main (){
         for (int i = 0; i < a; i++) {
             if (rate[i] != -1) {
                 std::cout << "Игрок" << i + 1 << " введите ставку----->";
-                std::cin >> tester;
-                if ((tester == 0) || (tester < rate[i]) {
+                getNum(tester);
+                if ((tester == 0) || (tester < rate[i])) {
                     bank += rate[i];
                     rate[i] = -1;
                 } else {
@@ -68,7 +69,12 @@ int main (){
             ender  = false;
         else {
             std::cout << "Хотите ли вы сейчас закончить игру? 0 - Да, 1 - Нет" << std::endl;
-            std::cin >> ender;
+            getNum(ender_chek);
+            while (ender_chek < 0 || ender_chek > 1) {
+                getNum(ender_chek);
+            }
+            ender = ender_chek;
+            ender_chek = -1;
         }
     }
     std::cout << "Пришло время подводить итоги" << std::endl;

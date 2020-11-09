@@ -6,6 +6,7 @@
 #include <algorithm>
 #include <stdexcept>
 #include <string>
+#include <iostream>
 
 namespace lab3
 {
@@ -74,4 +75,22 @@ namespace lab3
         */
         Bone generateBone();
     };
+
+template<class T>
+    double getNum(T &a) {                //проверочка ввода соответствующего типа данных
+        int i = 1;
+        while (i == 1) {
+            std::cin.clear();
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            std::cin >> a;
+            if (!std::cin.good())
+                i = 1;
+            else
+                i = 0;
+            if (i != 0) std::cout << "Вы ввели неприемлимое значение, повторите ввод" << std::endl;
+        }
+        return 0;
+    }
+
+
 }
