@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="TowerDefence"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/danilmorozov/Desktop/labsgit/TowerDefence/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/danilmorozov/Desktop/labsgit/TowerDefence/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/danilmorozov/Desktop/labsgit/TowerDefence/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/danilmorozov/Desktop/labsgit/TowerDefence/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/danilmorozov/Desktop/labsgit/TowerDefence/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/danilmorozov/Desktop/labsgit/TowerDefence/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/danilmorozov/Desktop/labsgit/TowerDefence/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/danilmorozov/Desktop/labsgit/TowerDefence/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/danilmorozov/Desktop/labsgit/TowerDefence/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/danilmorozov/Desktop/labsgit/TowerDefence/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/danilmorozov/Desktop/labsgit/TowerDefence/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/danilmorozov/Desktop/labsgit/TowerDefence/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/danilmorozov/Desktop/labsgit/TowerDefence/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/danilmorozov/Desktop/labsgit/TowerDefence/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/danilmorozov/Desktop/labsgit/TowerDefence/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="TowerDefence">
+				<Option output="/Users/danilmorozov/Desktop/labsgit/TowerDefence/cmake-build-debug/TowerDefence" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/danilmorozov/Desktop/labsgit/TowerDefence/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/danilmorozov/Desktop/labsgit/TowerDefence/cmake-build-debug/Makefile&quot;  VERBOSE=1 TowerDefence"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/danilmorozov/Desktop/labsgit/TowerDefence/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/danilmorozov/Desktop/labsgit/TowerDefence/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/danilmorozov/Desktop/labsgit/TowerDefence/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="TowerDefence/fast">
+				<Option output="/Users/danilmorozov/Desktop/labsgit/TowerDefence/cmake-build-debug/TowerDefence" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/danilmorozov/Desktop/labsgit/TowerDefence/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/danilmorozov/Desktop/labsgit/TowerDefence/cmake-build-debug/Makefile&quot;  VERBOSE=1 TowerDefence/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/danilmorozov/Desktop/labsgit/TowerDefence/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/danilmorozov/Desktop/labsgit/TowerDefence/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/danilmorozov/Desktop/labsgit/TowerDefence/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/danilmorozov/Desktop/labsgit/TowerDefence/Landscape /Landscape.cpp">
+			<Option target="TowerDefence"/>
+		</Unit>
+		<Unit filename="/Users/danilmorozov/Desktop/labsgit/TowerDefence/Landscape /Landscape.h">
+			<Option target="TowerDefence"/>
+		</Unit>
+		<Unit filename="/Users/danilmorozov/Desktop/labsgit/TowerDefence/activeUnits/Enemy.cpp">
+			<Option target="TowerDefence"/>
+		</Unit>
+		<Unit filename="/Users/danilmorozov/Desktop/labsgit/TowerDefence/activeUnits/Enemy.h">
+			<Option target="TowerDefence"/>
+		</Unit>
+		<Unit filename="/Users/danilmorozov/Desktop/labsgit/TowerDefence/activeUnits/Tower.cpp">
+			<Option target="TowerDefence"/>
+		</Unit>
+		<Unit filename="/Users/danilmorozov/Desktop/labsgit/TowerDefence/activeUnits/Tower.h">
+			<Option target="TowerDefence"/>
+		</Unit>
+		<Unit filename="/Users/danilmorozov/Desktop/labsgit/TowerDefence/activeUnits/TowerMagic.cpp">
+			<Option target="TowerDefence"/>
+		</Unit>
+		<Unit filename="/Users/danilmorozov/Desktop/labsgit/TowerDefence/activeUnits/TowerMagic.h">
+			<Option target="TowerDefence"/>
+		</Unit>
+		<Unit filename="/Users/danilmorozov/Desktop/labsgit/TowerDefence/activeUnits/TowerSimple.cpp">
+			<Option target="TowerDefence"/>
+		</Unit>
+		<Unit filename="/Users/danilmorozov/Desktop/labsgit/TowerDefence/activeUnits/TowerSimple.h">
+			<Option target="TowerDefence"/>
+		</Unit>
+		<Unit filename="/Users/danilmorozov/Desktop/labsgit/TowerDefence/activeUnits/TowerTrap.cpp">
+			<Option target="TowerDefence"/>
+		</Unit>
+		<Unit filename="/Users/danilmorozov/Desktop/labsgit/TowerDefence/activeUnits/TowerTrap.h">
+			<Option target="TowerDefence"/>
+		</Unit>
+		<Unit filename="/Users/danilmorozov/Desktop/labsgit/TowerDefence/main.cpp">
+			<Option target="TowerDefence"/>
+		</Unit>
+		<Unit filename="/Users/danilmorozov/Desktop/labsgit/TowerDefence/map.cpp">
+			<Option target="TowerDefence"/>
+		</Unit>
+		<Unit filename="/Users/danilmorozov/Desktop/labsgit/TowerDefence/map.h">
+			<Option target="TowerDefence"/>
+		</Unit>
+		<Unit filename="/Users/danilmorozov/Desktop/labsgit/TowerDefence/squares/Castle.cpp">
+			<Option target="TowerDefence"/>
+		</Unit>
+		<Unit filename="/Users/danilmorozov/Desktop/labsgit/TowerDefence/squares/Castle.h">
+			<Option target="TowerDefence"/>
+		</Unit>
+		<Unit filename="/Users/danilmorozov/Desktop/labsgit/TowerDefence/squares/Forest.cpp">
+			<Option target="TowerDefence"/>
+		</Unit>
+		<Unit filename="/Users/danilmorozov/Desktop/labsgit/TowerDefence/squares/Forest.h">
+			<Option target="TowerDefence"/>
+		</Unit>
+		<Unit filename="/Users/danilmorozov/Desktop/labsgit/TowerDefence/squares/Lair.cpp">
+			<Option target="TowerDefence"/>
+		</Unit>
+		<Unit filename="/Users/danilmorozov/Desktop/labsgit/TowerDefence/squares/Lair.h">
+			<Option target="TowerDefence"/>
+		</Unit>
+		<Unit filename="/Users/danilmorozov/Desktop/labsgit/TowerDefence/squares/Road.cpp">
+			<Option target="TowerDefence"/>
+		</Unit>
+		<Unit filename="/Users/danilmorozov/Desktop/labsgit/TowerDefence/squares/Road.h">
+			<Option target="TowerDefence"/>
+		</Unit>
+		<Unit filename="/Users/danilmorozov/Desktop/labsgit/TowerDefence/squares/Square.cpp">
+			<Option target="TowerDefence"/>
+		</Unit>
+		<Unit filename="/Users/danilmorozov/Desktop/labsgit/TowerDefence/squares/Square.h">
+			<Option target="TowerDefence"/>
+		</Unit>
+		<Unit filename="/Users/danilmorozov/Desktop/labsgit/TowerDefence/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
