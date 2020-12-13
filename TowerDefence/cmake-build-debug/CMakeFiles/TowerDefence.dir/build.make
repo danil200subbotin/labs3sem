@@ -90,22 +90,9 @@ CMakeFiles/TowerDefence.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TowerDefence.dir/main.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/danilmorozov/Desktop/labsgit/TowerDefence/main.cpp -o CMakeFiles/TowerDefence.dir/main.cpp.s
 
-CMakeFiles/TowerDefence.dir/map.cpp.o: CMakeFiles/TowerDefence.dir/flags.make
-CMakeFiles/TowerDefence.dir/map.cpp.o: ../map.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/danilmorozov/Desktop/labsgit/TowerDefence/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/TowerDefence.dir/map.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TowerDefence.dir/map.cpp.o -c /Users/danilmorozov/Desktop/labsgit/TowerDefence/map.cpp
-
-CMakeFiles/TowerDefence.dir/map.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TowerDefence.dir/map.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/danilmorozov/Desktop/labsgit/TowerDefence/map.cpp > CMakeFiles/TowerDefence.dir/map.cpp.i
-
-CMakeFiles/TowerDefence.dir/map.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TowerDefence.dir/map.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/danilmorozov/Desktop/labsgit/TowerDefence/map.cpp -o CMakeFiles/TowerDefence.dir/map.cpp.s
-
 CMakeFiles/TowerDefence.dir/squares/Square.cpp.o: CMakeFiles/TowerDefence.dir/flags.make
 CMakeFiles/TowerDefence.dir/squares/Square.cpp.o: ../squares/Square.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/danilmorozov/Desktop/labsgit/TowerDefence/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/TowerDefence.dir/squares/Square.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/danilmorozov/Desktop/labsgit/TowerDefence/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/TowerDefence.dir/squares/Square.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TowerDefence.dir/squares/Square.cpp.o -c /Users/danilmorozov/Desktop/labsgit/TowerDefence/squares/Square.cpp
 
 CMakeFiles/TowerDefence.dir/squares/Square.cpp.i: cmake_force
@@ -118,7 +105,7 @@ CMakeFiles/TowerDefence.dir/squares/Square.cpp.s: cmake_force
 
 CMakeFiles/TowerDefence.dir/squares/Castle.cpp.o: CMakeFiles/TowerDefence.dir/flags.make
 CMakeFiles/TowerDefence.dir/squares/Castle.cpp.o: ../squares/Castle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/danilmorozov/Desktop/labsgit/TowerDefence/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/TowerDefence.dir/squares/Castle.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/danilmorozov/Desktop/labsgit/TowerDefence/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/TowerDefence.dir/squares/Castle.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TowerDefence.dir/squares/Castle.cpp.o -c /Users/danilmorozov/Desktop/labsgit/TowerDefence/squares/Castle.cpp
 
 CMakeFiles/TowerDefence.dir/squares/Castle.cpp.i: cmake_force
@@ -131,7 +118,7 @@ CMakeFiles/TowerDefence.dir/squares/Castle.cpp.s: cmake_force
 
 CMakeFiles/TowerDefence.dir/squares/Lair.cpp.o: CMakeFiles/TowerDefence.dir/flags.make
 CMakeFiles/TowerDefence.dir/squares/Lair.cpp.o: ../squares/Lair.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/danilmorozov/Desktop/labsgit/TowerDefence/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/TowerDefence.dir/squares/Lair.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/danilmorozov/Desktop/labsgit/TowerDefence/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/TowerDefence.dir/squares/Lair.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TowerDefence.dir/squares/Lair.cpp.o -c /Users/danilmorozov/Desktop/labsgit/TowerDefence/squares/Lair.cpp
 
 CMakeFiles/TowerDefence.dir/squares/Lair.cpp.i: cmake_force
@@ -144,7 +131,7 @@ CMakeFiles/TowerDefence.dir/squares/Lair.cpp.s: cmake_force
 
 CMakeFiles/TowerDefence.dir/squares/Road.cpp.o: CMakeFiles/TowerDefence.dir/flags.make
 CMakeFiles/TowerDefence.dir/squares/Road.cpp.o: ../squares/Road.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/danilmorozov/Desktop/labsgit/TowerDefence/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/TowerDefence.dir/squares/Road.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/danilmorozov/Desktop/labsgit/TowerDefence/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/TowerDefence.dir/squares/Road.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TowerDefence.dir/squares/Road.cpp.o -c /Users/danilmorozov/Desktop/labsgit/TowerDefence/squares/Road.cpp
 
 CMakeFiles/TowerDefence.dir/squares/Road.cpp.i: cmake_force
@@ -157,7 +144,7 @@ CMakeFiles/TowerDefence.dir/squares/Road.cpp.s: cmake_force
 
 CMakeFiles/TowerDefence.dir/squares/Forest.cpp.o: CMakeFiles/TowerDefence.dir/flags.make
 CMakeFiles/TowerDefence.dir/squares/Forest.cpp.o: ../squares/Forest.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/danilmorozov/Desktop/labsgit/TowerDefence/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/TowerDefence.dir/squares/Forest.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/danilmorozov/Desktop/labsgit/TowerDefence/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/TowerDefence.dir/squares/Forest.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TowerDefence.dir/squares/Forest.cpp.o -c /Users/danilmorozov/Desktop/labsgit/TowerDefence/squares/Forest.cpp
 
 CMakeFiles/TowerDefence.dir/squares/Forest.cpp.i: cmake_force
@@ -170,7 +157,7 @@ CMakeFiles/TowerDefence.dir/squares/Forest.cpp.s: cmake_force
 
 CMakeFiles/TowerDefence.dir/activeUnits/Tower.cpp.o: CMakeFiles/TowerDefence.dir/flags.make
 CMakeFiles/TowerDefence.dir/activeUnits/Tower.cpp.o: ../activeUnits/Tower.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/danilmorozov/Desktop/labsgit/TowerDefence/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/TowerDefence.dir/activeUnits/Tower.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/danilmorozov/Desktop/labsgit/TowerDefence/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/TowerDefence.dir/activeUnits/Tower.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TowerDefence.dir/activeUnits/Tower.cpp.o -c /Users/danilmorozov/Desktop/labsgit/TowerDefence/activeUnits/Tower.cpp
 
 CMakeFiles/TowerDefence.dir/activeUnits/Tower.cpp.i: cmake_force
@@ -181,22 +168,22 @@ CMakeFiles/TowerDefence.dir/activeUnits/Tower.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TowerDefence.dir/activeUnits/Tower.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/danilmorozov/Desktop/labsgit/TowerDefence/activeUnits/Tower.cpp -o CMakeFiles/TowerDefence.dir/activeUnits/Tower.cpp.s
 
-CMakeFiles/TowerDefence.dir/Landscape_/Landscape.cpp.o: CMakeFiles/TowerDefence.dir/flags.make
-CMakeFiles/TowerDefence.dir/Landscape_/Landscape.cpp.o: ../Landscape\ /Landscape.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/danilmorozov/Desktop/labsgit/TowerDefence/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/TowerDefence.dir/Landscape_/Landscape.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TowerDefence.dir/Landscape_/Landscape.cpp.o -c "/Users/danilmorozov/Desktop/labsgit/TowerDefence/Landscape /Landscape.cpp"
+CMakeFiles/TowerDefence.dir/Land/Landscape.cpp.o: CMakeFiles/TowerDefence.dir/flags.make
+CMakeFiles/TowerDefence.dir/Land/Landscape.cpp.o: ../Land/Landscape.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/danilmorozov/Desktop/labsgit/TowerDefence/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/TowerDefence.dir/Land/Landscape.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TowerDefence.dir/Land/Landscape.cpp.o -c /Users/danilmorozov/Desktop/labsgit/TowerDefence/Land/Landscape.cpp
 
-CMakeFiles/TowerDefence.dir/Landscape_/Landscape.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TowerDefence.dir/Landscape_/Landscape.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/danilmorozov/Desktop/labsgit/TowerDefence/Landscape /Landscape.cpp" > CMakeFiles/TowerDefence.dir/Landscape_/Landscape.cpp.i
+CMakeFiles/TowerDefence.dir/Land/Landscape.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TowerDefence.dir/Land/Landscape.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/danilmorozov/Desktop/labsgit/TowerDefence/Land/Landscape.cpp > CMakeFiles/TowerDefence.dir/Land/Landscape.cpp.i
 
-CMakeFiles/TowerDefence.dir/Landscape_/Landscape.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TowerDefence.dir/Landscape_/Landscape.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/danilmorozov/Desktop/labsgit/TowerDefence/Landscape /Landscape.cpp" -o CMakeFiles/TowerDefence.dir/Landscape_/Landscape.cpp.s
+CMakeFiles/TowerDefence.dir/Land/Landscape.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TowerDefence.dir/Land/Landscape.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/danilmorozov/Desktop/labsgit/TowerDefence/Land/Landscape.cpp -o CMakeFiles/TowerDefence.dir/Land/Landscape.cpp.s
 
 CMakeFiles/TowerDefence.dir/activeUnits/TowerSimple.cpp.o: CMakeFiles/TowerDefence.dir/flags.make
 CMakeFiles/TowerDefence.dir/activeUnits/TowerSimple.cpp.o: ../activeUnits/TowerSimple.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/danilmorozov/Desktop/labsgit/TowerDefence/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/TowerDefence.dir/activeUnits/TowerSimple.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/danilmorozov/Desktop/labsgit/TowerDefence/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/TowerDefence.dir/activeUnits/TowerSimple.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TowerDefence.dir/activeUnits/TowerSimple.cpp.o -c /Users/danilmorozov/Desktop/labsgit/TowerDefence/activeUnits/TowerSimple.cpp
 
 CMakeFiles/TowerDefence.dir/activeUnits/TowerSimple.cpp.i: cmake_force
@@ -209,7 +196,7 @@ CMakeFiles/TowerDefence.dir/activeUnits/TowerSimple.cpp.s: cmake_force
 
 CMakeFiles/TowerDefence.dir/activeUnits/TowerMagic.cpp.o: CMakeFiles/TowerDefence.dir/flags.make
 CMakeFiles/TowerDefence.dir/activeUnits/TowerMagic.cpp.o: ../activeUnits/TowerMagic.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/danilmorozov/Desktop/labsgit/TowerDefence/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/TowerDefence.dir/activeUnits/TowerMagic.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/danilmorozov/Desktop/labsgit/TowerDefence/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/TowerDefence.dir/activeUnits/TowerMagic.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TowerDefence.dir/activeUnits/TowerMagic.cpp.o -c /Users/danilmorozov/Desktop/labsgit/TowerDefence/activeUnits/TowerMagic.cpp
 
 CMakeFiles/TowerDefence.dir/activeUnits/TowerMagic.cpp.i: cmake_force
@@ -222,7 +209,7 @@ CMakeFiles/TowerDefence.dir/activeUnits/TowerMagic.cpp.s: cmake_force
 
 CMakeFiles/TowerDefence.dir/activeUnits/Enemy.cpp.o: CMakeFiles/TowerDefence.dir/flags.make
 CMakeFiles/TowerDefence.dir/activeUnits/Enemy.cpp.o: ../activeUnits/Enemy.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/danilmorozov/Desktop/labsgit/TowerDefence/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/TowerDefence.dir/activeUnits/Enemy.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/danilmorozov/Desktop/labsgit/TowerDefence/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/TowerDefence.dir/activeUnits/Enemy.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TowerDefence.dir/activeUnits/Enemy.cpp.o -c /Users/danilmorozov/Desktop/labsgit/TowerDefence/activeUnits/Enemy.cpp
 
 CMakeFiles/TowerDefence.dir/activeUnits/Enemy.cpp.i: cmake_force
@@ -235,7 +222,7 @@ CMakeFiles/TowerDefence.dir/activeUnits/Enemy.cpp.s: cmake_force
 
 CMakeFiles/TowerDefence.dir/activeUnits/TowerTrap.cpp.o: CMakeFiles/TowerDefence.dir/flags.make
 CMakeFiles/TowerDefence.dir/activeUnits/TowerTrap.cpp.o: ../activeUnits/TowerTrap.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/danilmorozov/Desktop/labsgit/TowerDefence/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/TowerDefence.dir/activeUnits/TowerTrap.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/danilmorozov/Desktop/labsgit/TowerDefence/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/TowerDefence.dir/activeUnits/TowerTrap.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TowerDefence.dir/activeUnits/TowerTrap.cpp.o -c /Users/danilmorozov/Desktop/labsgit/TowerDefence/activeUnits/TowerTrap.cpp
 
 CMakeFiles/TowerDefence.dir/activeUnits/TowerTrap.cpp.i: cmake_force
@@ -249,14 +236,13 @@ CMakeFiles/TowerDefence.dir/activeUnits/TowerTrap.cpp.s: cmake_force
 # Object files for target TowerDefence
 TowerDefence_OBJECTS = \
 "CMakeFiles/TowerDefence.dir/main.cpp.o" \
-"CMakeFiles/TowerDefence.dir/map.cpp.o" \
 "CMakeFiles/TowerDefence.dir/squares/Square.cpp.o" \
 "CMakeFiles/TowerDefence.dir/squares/Castle.cpp.o" \
 "CMakeFiles/TowerDefence.dir/squares/Lair.cpp.o" \
 "CMakeFiles/TowerDefence.dir/squares/Road.cpp.o" \
 "CMakeFiles/TowerDefence.dir/squares/Forest.cpp.o" \
 "CMakeFiles/TowerDefence.dir/activeUnits/Tower.cpp.o" \
-"CMakeFiles/TowerDefence.dir/Landscape_/Landscape.cpp.o" \
+"CMakeFiles/TowerDefence.dir/Land/Landscape.cpp.o" \
 "CMakeFiles/TowerDefence.dir/activeUnits/TowerSimple.cpp.o" \
 "CMakeFiles/TowerDefence.dir/activeUnits/TowerMagic.cpp.o" \
 "CMakeFiles/TowerDefence.dir/activeUnits/Enemy.cpp.o" \
@@ -266,21 +252,23 @@ TowerDefence_OBJECTS = \
 TowerDefence_EXTERNAL_OBJECTS =
 
 TowerDefence: CMakeFiles/TowerDefence.dir/main.cpp.o
-TowerDefence: CMakeFiles/TowerDefence.dir/map.cpp.o
 TowerDefence: CMakeFiles/TowerDefence.dir/squares/Square.cpp.o
 TowerDefence: CMakeFiles/TowerDefence.dir/squares/Castle.cpp.o
 TowerDefence: CMakeFiles/TowerDefence.dir/squares/Lair.cpp.o
 TowerDefence: CMakeFiles/TowerDefence.dir/squares/Road.cpp.o
 TowerDefence: CMakeFiles/TowerDefence.dir/squares/Forest.cpp.o
 TowerDefence: CMakeFiles/TowerDefence.dir/activeUnits/Tower.cpp.o
-TowerDefence: CMakeFiles/TowerDefence.dir/Landscape_/Landscape.cpp.o
+TowerDefence: CMakeFiles/TowerDefence.dir/Land/Landscape.cpp.o
 TowerDefence: CMakeFiles/TowerDefence.dir/activeUnits/TowerSimple.cpp.o
 TowerDefence: CMakeFiles/TowerDefence.dir/activeUnits/TowerMagic.cpp.o
 TowerDefence: CMakeFiles/TowerDefence.dir/activeUnits/Enemy.cpp.o
 TowerDefence: CMakeFiles/TowerDefence.dir/activeUnits/TowerTrap.cpp.o
 TowerDefence: CMakeFiles/TowerDefence.dir/build.make
+TowerDefence: /usr/local/lib/libsfml-graphics.2.5.1.dylib
+TowerDefence: /usr/local/lib/libsfml-window.2.5.1.dylib
+TowerDefence: /usr/local/lib/libsfml-system.2.5.1.dylib
 TowerDefence: CMakeFiles/TowerDefence.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/danilmorozov/Desktop/labsgit/TowerDefence/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable TowerDefence"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/danilmorozov/Desktop/labsgit/TowerDefence/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable TowerDefence"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TowerDefence.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

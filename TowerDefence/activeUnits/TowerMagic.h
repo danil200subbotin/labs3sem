@@ -7,26 +7,22 @@
 
 
 #include "TowerSimple.h"
+#include "structs.h"
 
-struct Effect {
-    int DPS;
-
-    int slow;
-
-    int illness;
-
-    int time;
-};
 
 class TowerMagic: public TowerSimple {
 private:
-    static const Effect effectsTable[3];
-public:
-    int attack();
 
-    int levelUp();
+
+public:
+    static const Effect effectsTable[3];
+
+ //   int attack() override;
+
+    TowerMagic(int x, int y, std::list <Road*> *roadList);
 
 };
+
 
 
 #endif //TOWERDEFENCE_TOWERMAGIC_H

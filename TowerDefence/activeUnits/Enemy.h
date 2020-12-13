@@ -5,35 +5,77 @@
 #ifndef TOWERDEFENCE_ENEMY_H
 #define TOWERDEFENCE_ENEMY_H
 
-#include "TowerMagic.h"
+#include "structs.h"
+#include "../squares/Road.h"
 #include <string>
+#include <sstream>
+#include <utility>
+#include "Stack.h"
+
 
 class Enemy {
 private:
     int x, y;
+
+    std::string PATH;
+
     std::string name;
 
     int hitPoints;
 
+    sf::Sprite *sprite;
+
     int maxHP;
 
-    int speed;
+    float speed;
 
     int gold;
 
-    struct Effect effects[3];
+    float timeBeforePop;
+
+    class Road* iamHere;
+
+    struct Effect* effects[3];
+
+    Stack<*struct >
+
+
 public:
-    Enemy();
 
-    int isMagicEffect();
+    int getMoney() const { return gold; };
 
-    int getHP();
+    Enemy(int x, int y, int hitPoints, int maxHP, float speed, int gold, float time, std::string name = "Vadim");
 
-    int addEffect (struct Effect, int effectType);
+    float getSpeed() const { return speed; };
+
+    void setX(int newX) { x = newX; };
+
+    void setY(int newY) { y = newY; };
+
+    int getX() { return x; };
+
+    int getY() { return y; };
+
+    int setRoad(Road* road);
+
+    class Road* getRoad() { return iamHere; };
+
+    void minusTime(float deltaTime) { timeBeforePop -= deltaTime; };
+
+    float getTime() { return timeBeforePop; };
+
+    int isMagicEffect() const;
+
+    int getHP() const;
+
+    void draw (sf::RenderWindow *window, sf::Text *text);
+
+    int addEffect (int which, int effectLevel);
 
     int damage (int);
 
     int chekAndDeleteEffects ();
 };
+
 
 #endif //TOWERDEFENCE_ENEMY_H

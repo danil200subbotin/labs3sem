@@ -143,32 +143,32 @@ TowerDefence/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TowerDefence.dir/build.make CMakeFiles/TowerDefence.dir/build
 .PHONY : TowerDefence/fast
 
-Landscape_/Landscape.o: Landscape_/Landscape.cpp.o
+Land/Landscape.o: Land/Landscape.cpp.o
 
-.PHONY : Landscape_/Landscape.o
+.PHONY : Land/Landscape.o
 
 # target to build an object file
-Landscape_/Landscape.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TowerDefence.dir/build.make CMakeFiles/TowerDefence.dir/Landscape_/Landscape.cpp.o
-.PHONY : Landscape_/Landscape.cpp.o
+Land/Landscape.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TowerDefence.dir/build.make CMakeFiles/TowerDefence.dir/Land/Landscape.cpp.o
+.PHONY : Land/Landscape.cpp.o
 
-Landscape_/Landscape.i: Landscape_/Landscape.cpp.i
+Land/Landscape.i: Land/Landscape.cpp.i
 
-.PHONY : Landscape_/Landscape.i
+.PHONY : Land/Landscape.i
 
 # target to preprocess a source file
-Landscape_/Landscape.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TowerDefence.dir/build.make CMakeFiles/TowerDefence.dir/Landscape_/Landscape.cpp.i
-.PHONY : Landscape_/Landscape.cpp.i
+Land/Landscape.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TowerDefence.dir/build.make CMakeFiles/TowerDefence.dir/Land/Landscape.cpp.i
+.PHONY : Land/Landscape.cpp.i
 
-Landscape_/Landscape.s: Landscape_/Landscape.cpp.s
+Land/Landscape.s: Land/Landscape.cpp.s
 
-.PHONY : Landscape_/Landscape.s
+.PHONY : Land/Landscape.s
 
 # target to generate assembly for a file
-Landscape_/Landscape.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TowerDefence.dir/build.make CMakeFiles/TowerDefence.dir/Landscape_/Landscape.cpp.s
-.PHONY : Landscape_/Landscape.cpp.s
+Land/Landscape.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TowerDefence.dir/build.make CMakeFiles/TowerDefence.dir/Land/Landscape.cpp.s
+.PHONY : Land/Landscape.cpp.s
 
 activeUnits/Enemy.o: activeUnits/Enemy.cpp.o
 
@@ -332,33 +332,6 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/TowerDefence.dir/build.make CMakeFiles/TowerDefence.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-map.o: map.cpp.o
-
-.PHONY : map.o
-
-# target to build an object file
-map.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TowerDefence.dir/build.make CMakeFiles/TowerDefence.dir/map.cpp.o
-.PHONY : map.cpp.o
-
-map.i: map.cpp.i
-
-.PHONY : map.i
-
-# target to preprocess a source file
-map.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TowerDefence.dir/build.make CMakeFiles/TowerDefence.dir/map.cpp.i
-.PHONY : map.cpp.i
-
-map.s: map.cpp.s
-
-.PHONY : map.s
-
-# target to generate assembly for a file
-map.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/TowerDefence.dir/build.make CMakeFiles/TowerDefence.dir/map.cpp.s
-.PHONY : map.cpp.s
-
 squares/Castle.o: squares/Castle.cpp.o
 
 .PHONY : squares/Castle.o
@@ -503,9 +476,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... TowerDefence"
-	@echo "... Landscape_/Landscape.o"
-	@echo "... Landscape_/Landscape.i"
-	@echo "... Landscape_/Landscape.s"
+	@echo "... Land/Landscape.o"
+	@echo "... Land/Landscape.i"
+	@echo "... Land/Landscape.s"
 	@echo "... activeUnits/Enemy.o"
 	@echo "... activeUnits/Enemy.i"
 	@echo "... activeUnits/Enemy.s"
@@ -524,9 +497,6 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... map.o"
-	@echo "... map.i"
-	@echo "... map.s"
 	@echo "... squares/Castle.o"
 	@echo "... squares/Castle.i"
 	@echo "... squares/Castle.s"

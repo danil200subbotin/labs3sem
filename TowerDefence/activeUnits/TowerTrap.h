@@ -6,21 +6,26 @@
 #define TOWERDEFENCE_TOWERTRAP_H
 
 
-#include "TowerSimple.h"
-#include "TowerMagic.h"
+#include "structs.h"
+#include "Tower.h"
 
 class TowerTrap: public Tower {
 private:
-    static const TowerLevel levelsTable[2];
-
+    int damage;
+    int range;
     static const Effect effectsTable[2];
 
 public:
 
-    int attack;
+    TowerTrap(int x, int y);
 
-    int levelUp;
+    int getRange() override;
 
+    int getDamage() override;
+
+    int attack() override;
+
+    int levelUp(int amountGold) override;
 };
 
 #endif //TOWERDEFENCE_TOWERTRAP_H

@@ -16,7 +16,6 @@ public:
 
     int buyForest();
 
-    int Render();
 
 };
 

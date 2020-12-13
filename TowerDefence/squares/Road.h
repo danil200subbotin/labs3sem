@@ -10,7 +10,7 @@
 
 class Road: public Square {
 private:
-    std::list<Enemy*> enemies;
+    std::list<class Enemy*> enemies;
 
     Road* next;
 
@@ -19,15 +19,15 @@ public:
 
     int setNext(Road*);
 
+    Road* getNext();
+
     Enemy* getLowHP();
+
+    int addHere(Enemy*);
+
+    int deleteHere(Enemy*);
 };
 
-
-struct enemyTime{
-    int time;
-
-    Enemy* enemy;
-};
 
 
 

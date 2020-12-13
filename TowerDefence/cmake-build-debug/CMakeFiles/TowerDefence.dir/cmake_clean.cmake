@@ -1,12 +1,11 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/TowerDefence.dir/Landscape_/Landscape.cpp.o"
+  "CMakeFiles/TowerDefence.dir/Land/Landscape.cpp.o"
   "CMakeFiles/TowerDefence.dir/activeUnits/Enemy.cpp.o"
   "CMakeFiles/TowerDefence.dir/activeUnits/Tower.cpp.o"
   "CMakeFiles/TowerDefence.dir/activeUnits/TowerMagic.cpp.o"
   "CMakeFiles/TowerDefence.dir/activeUnits/TowerSimple.cpp.o"
   "CMakeFiles/TowerDefence.dir/activeUnits/TowerTrap.cpp.o"
   "CMakeFiles/TowerDefence.dir/main.cpp.o"
-  "CMakeFiles/TowerDefence.dir/map.cpp.o"
   "CMakeFiles/TowerDefence.dir/squares/Castle.cpp.o"
   "CMakeFiles/TowerDefence.dir/squares/Forest.cpp.o"
   "CMakeFiles/TowerDefence.dir/squares/Lair.cpp.o"

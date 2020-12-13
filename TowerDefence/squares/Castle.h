@@ -11,18 +11,25 @@
 
 class Castle: public Square {
 private:
+
     int hitPoints;
 
     int maxHP;
 
     int amountGold;
 
-public:
-    Castle(int, int, int, int, int);
+    std::string defeat;
 
-    int addGold(int);
+public:
+    Castle(int x, int y, int gold, int HP, int mHP);
+
+    int MONEY(int gold);
+
+    int getGold() const { return amountGold; };
 
     int damage(int);
+
+    int getHP() const { return hitPoints; };
 
 };
 

@@ -5,7 +5,7 @@
 		<Option title="TowerDefence"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\usr\local\lib\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\..\..\usr\local\lib\cmake\SFML\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/Users/danilmorozov/Desktop/labsgit/TowerDefence/cmake-build-debug"/>
@@ -44,8 +44,9 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/Users/danilmorozov/Desktop/labsgit/TowerDefence/SFML_INCLUDE_DIR"/>
 					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
@@ -65,8 +66,9 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/Users/danilmorozov/Desktop/labsgit/TowerDefence/SFML_INCLUDE_DIR"/>
 					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
@@ -80,10 +82,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/danilmorozov/Desktop/labsgit/TowerDefence/Landscape /Landscape.cpp">
+		<Unit filename="/Users/danilmorozov/Desktop/labsgit/TowerDefence/Land/Landscape.cpp">
 			<Option target="TowerDefence"/>
 		</Unit>
-		<Unit filename="/Users/danilmorozov/Desktop/labsgit/TowerDefence/Landscape /Landscape.h">
+		<Unit filename="/Users/danilmorozov/Desktop/labsgit/TowerDefence/Land/Landscape.h">
+			<Option target="TowerDefence"/>
+		</Unit>
+		<Unit filename="/Users/danilmorozov/Desktop/labsgit/TowerDefence/Stack.h">
 			<Option target="TowerDefence"/>
 		</Unit>
 		<Unit filename="/Users/danilmorozov/Desktop/labsgit/TowerDefence/activeUnits/Enemy.cpp">
@@ -116,13 +121,10 @@
 		<Unit filename="/Users/danilmorozov/Desktop/labsgit/TowerDefence/activeUnits/TowerTrap.h">
 			<Option target="TowerDefence"/>
 		</Unit>
+		<Unit filename="/Users/danilmorozov/Desktop/labsgit/TowerDefence/activeUnits/structs.h">
+			<Option target="TowerDefence"/>
+		</Unit>
 		<Unit filename="/Users/danilmorozov/Desktop/labsgit/TowerDefence/main.cpp">
-			<Option target="TowerDefence"/>
-		</Unit>
-		<Unit filename="/Users/danilmorozov/Desktop/labsgit/TowerDefence/map.cpp">
-			<Option target="TowerDefence"/>
-		</Unit>
-		<Unit filename="/Users/danilmorozov/Desktop/labsgit/TowerDefence/map.h">
 			<Option target="TowerDefence"/>
 		</Unit>
 		<Unit filename="/Users/danilmorozov/Desktop/labsgit/TowerDefence/squares/Castle.cpp">
@@ -157,6 +159,21 @@
 		</Unit>
 		<Unit filename="/Users/danilmorozov/Desktop/labsgit/TowerDefence/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/danilmorozov/Desktop/labsgit/TowerDefence/../../../../../usr/local/lib/cmake/SFML/SFMLConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="/Users/danilmorozov/Desktop/labsgit/TowerDefence/../../../../../usr/local/lib/cmake/SFML/SFMLConfigDependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="/Users/danilmorozov/Desktop/labsgit/TowerDefence/../../../../../usr/local/lib/cmake/SFML/SFMLConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="/Users/danilmorozov/Desktop/labsgit/TowerDefence/../../../../../usr/local/lib/cmake/SFML/SFMLSharedTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="/Users/danilmorozov/Desktop/labsgit/TowerDefence/../../../../../usr/local/lib/cmake/SFML/SFMLSharedTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\usr\local\lib\cmake\SFML\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

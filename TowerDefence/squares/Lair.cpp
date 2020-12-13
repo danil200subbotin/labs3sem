@@ -6,4 +6,6 @@
 
 
 
-EnemiesLair::EnemiesLair(int x, int y): Square(x, y, lair), quantity(0){};
+EnemiesLair::EnemiesLair(int x, int y): Square(x, y), quantity(0){
+    PATH = "/Users/danilmorozov/Desktop/labsgit/TowerDefence/images/lair2.png";
+};

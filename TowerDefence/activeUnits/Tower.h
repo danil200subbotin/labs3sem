@@ -16,20 +16,20 @@ protected:
     int level;
 
 
-    std::list<Road*> boomArea;
+    std::list<class Road*> boomArea;
 
 public:
+    Tower(int x, int y);
+
     virtual int attack() = 0;
 
     virtual int getRange() = 0;
 
     virtual int getDamage() = 0;
 
-    virtual int levelUp() = 0;
+    virtual int levelUp(int castleGold) = 0;
 
-    int Render();
-
-    int makeBoomArea(std::list <Road*> :: iterator it_f, std::list <Road*> :: iterator it_end);
+    int makeBoomArea(std::list <Road*> *roadList);
 };
 
 

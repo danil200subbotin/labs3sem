@@ -4,24 +4,30 @@
 
 #ifndef TOWERDEFENCE_SQUARE_H
 #define TOWERDEFENCE_SQUARE_H
+#include <string>
+#include <SFML/Graphics.hpp>
 
 
 class Square {
 protected:
     int x, y;
-    int type;
-    enum types{road = 1, castle, lair, forest, tower, field};
+
+    sf::Sprite *sprite;
+
+    std::string PATH;
 
 public:
-    Square(int, int, int);
+    Square(int, int);
 
-    virtual int Render();
+    int draw(sf::RenderWindow *window);
 
     int setCoord(int, int);
 
     int getX();
 
     int getY();
+
+    void setPATH(std::string &newPATH);
 
 };
 

@@ -14,4 +14,18 @@ int TowerTrap::attack() {
             lowest = (*it_r)->getLowHP();
     }
     lowest->damage(getDamage());
+    return 0;
 }
+
+TowerTrap::TowerTrap(int x, int y): Tower(x, y) {
+    PATH = "/Users/danilmorozov/Desktop/labsgit/TowerDefence/images/towerT.png";
+}
+
+int TowerTrap::getDamage() { return damage; }
+
+int TowerTrap::getRange() { return range; }
+
+int TowerTrap::levelUp(int amountGold) {
+    return 0;
+}
+

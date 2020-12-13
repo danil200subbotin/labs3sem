@@ -5,14 +5,23 @@
 #ifndef TOWERDEFENCE_LAIR_H
 #define TOWERDEFENCE_LAIR_H
 #include <stack>
+#include <list>
 #include "Square.h"
+#include "../activeUnits/Enemy.h"
+
+struct enemyTime{
+    int time;
+
+    Enemy* enemy;
+};
+
 
 class EnemiesLair: public Square {
 private:
 
     int quantity;
 
-    std::stack<struct enemyTime> enemies;
+    std::list<struct enemyTime> enemies;
 
 public:
     EnemiesLair(int, int);
@@ -25,8 +34,5 @@ public:
 
 };
 
-struct enemyTime {
-
-};
 
 #endif //TOWERDEFENCE_LAIR_H

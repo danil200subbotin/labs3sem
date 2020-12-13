@@ -6,5 +6,7 @@
 
 
 
-Forest::Forest(int x, int y, int cost): Square(x, y, forest), cost(cost){};
+Forest::Forest(int x, int y, int cost): Square(x, y), cost(cost){
+    PATH = "/Users/danilmorozov/Desktop/labsgit/TowerDefence/images/forest4.png";
+};
 

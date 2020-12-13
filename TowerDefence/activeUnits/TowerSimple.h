@@ -11,7 +11,7 @@
 struct TowerLevel{
     int damage;
 
-    int speed;
+    int reload;
 
     int radius;
 
@@ -23,19 +23,34 @@ struct TowerLevel{
 
 class TowerSimple: public Tower{
 private:
-    static const TowerLevel levelsTable[3];
+
+    float cooldown;
+
 
 public:
+
+    static const TowerLevel levelsTable[3];
+
+    TowerSimple(int x, int y, std::list <Road*> *roadList);
+
     int attack() override;
 
-    int levelUp(int castleGold);
+    int levelUp(int amountGold) final;
 
     int getRange() override;
 
     int getDamage() override;
 
     int getCost();
+
+    int getCollDown () { return cooldown; };
+
+    void minusCoolDown (float);
+
+    void startRaload ();
 };
+
+
 
 
 #endif //TOWERDEFENCE_TOWERSIMPLE_H
