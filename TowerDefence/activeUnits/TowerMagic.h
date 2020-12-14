@@ -17,7 +17,7 @@ private:
 public:
     static const Effect effectsTable[3];
 
- //   int attack() override;
+    int attack() override;
 
     TowerMagic(int x, int y, std::list <Road*> *roadList);
 

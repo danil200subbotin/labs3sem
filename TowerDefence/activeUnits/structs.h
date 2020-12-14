@@ -6,8 +6,6 @@
 #define TOWERDEFENCE_STRUCTS_H
 
 struct Effect {
-    int DPS;
-
     int slow;
 
     int illness;

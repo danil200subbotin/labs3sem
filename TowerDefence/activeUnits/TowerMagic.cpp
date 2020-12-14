@@ -9,31 +9,30 @@ TowerMagic::TowerMagic(int x, int y, std::list <Road*> *roadList): TowerSimple(x
     startRaload();
 }
 
- /* int TowerMagic::attack() {
+int TowerMagic::attack() {
     std::list <Road*> :: iterator it_r;
+    std::list <Enemy*> :: iterator it_e;
+    bool fire = false;
     it_r = boomArea.begin();
     if (!boomArea.empty()) {
         Enemy *lowest = (*it_r)->getLowHP();
-        for (; it_r != boomArea.end(); ++it_r) {
-            if ((*it_r)->getLowHP() != nullptr) {
-                if (lowest == nullptr) {
-                    lowest = (*it_r)->getLowHP();
-                } else {
-                    if (((*it_r)->getLowHP()->getHP() < lowest->getHP())) {
-                        lowest = (*it_r)->getLowHP();
+        for (it_r = boomArea.begin(); it_r != boomArea.end(); ++it_r) {
+            for (it_e = (*it_r)->getIter(); it_e != (*it_r)->getLIter(); ++it_e) {
+                if (*it_e != nullptr) {
+                    if (!(*it_e)->isMagicEffect() && !fire) {
+                        (*it_e)->addEffect(effectsTable[level], 0, 0, 0, 255);
+                        fire = true;
                     }
                 }
-                lowest->addEffect(*effectsTable[level], 0);
             }
         }
     }
     return 0;
 }
 
-  */
 
 const struct Effect TowerMagic::effectsTable[] = {
-        {1, 1, 1, 1000},
-        {2,2,2, 2000},
-        {3, 3, 3, 3000}
+        {1, 7, 40},
+        {2,2, 50},
+        {3, 3, 70}
 } ;

@@ -220,6 +220,7 @@ int Landscape::updateEnemies(float time) {
             (*it_e)->getRoad()->deleteHere((*it_e));
             it_e = actUnits.enemies.erase(it_e);
         } else {
+            (*it_e)->chekAndDeleteEffects();
             if ((*it_e)->getTime() > 0) {
                 (*it_e)->minusTime(time);
                 if ((*it_e)->getTime() < 0) {
@@ -241,21 +242,24 @@ int Landscape::updateEnemies(float time) {
                         direction = 4;
                     int x = (*it_e)->getX();
                     int y = (*it_e)->getY();
+                    float speed = (*it_e)->getSpeed();
+                 //   std::cout << "-->"<< (*it_e)->getSpeedKoaf() << std::endl;
+                    speed = speed / (*it_e)->getSpeedKoaf();
                     //      std::cout << (*it_e)->getRoad()->getNext()->getX() << std::endl;
                     switch (direction) {
                         case 0:
                             break;
                         case 1:
-                            (*it_e)->setX(int((*it_e)->getSpeed() * time) + x);
+                            (*it_e)->setX(int(speed * time) + x);
                             break;
                         case 2:
-                            (*it_e)->setY(int((*it_e)->getSpeed() * time) + y);
+                            (*it_e)->setY(int(speed * time) + y);
                             break;
                         case 3:
-                            (*it_e)->setX(x - int((*it_e)->getSpeed() * time));
+                            (*it_e)->setX(x - int(speed * time));
                             break;
                         case 4:
-                            (*it_e)->setY(y - int((*it_e)->getSpeed() * time));
+                            (*it_e)->setY(y - int(speed * time));
                             break;
                     }
                     x = (*it_e)->getX();
@@ -389,7 +393,7 @@ int Landscape::addTower(int x, int y, int type, std::list <Road*> *roadList) {
             }
             if (type == 3) {
                 if (isRoad(x, y)) {
-                    auto *newTowerT = new TowerTrap(x, y);
+                    auto *newTowerT = new TowerTrap(x, y, roadList);
                     actUnits.trapTower.push_back(newTowerT);
                 }
             }
@@ -422,6 +426,14 @@ void Landscape::fire(float time) {
             }
             ++it_r;
         }
+    }
+    if (!actUnits.trapTower.empty()) {
+        auto it_r = actUnits.trapTower.begin();
+        while (it_r != actUnits.trapTower.end()) {
+            (*it_r)->attack();
+            ++it_r;
+        }
+
     }
 
 }

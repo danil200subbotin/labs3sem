@@ -3,6 +3,7 @@
 
 CMakeFiles/TowerDefence.dir/Land/Landscape.cpp.o: ../Land/Landscape.cpp
 CMakeFiles/TowerDefence.dir/Land/Landscape.cpp.o: ../Land/Landscape.h
+CMakeFiles/TowerDefence.dir/Land/Landscape.cpp.o: ../Stack.h
 CMakeFiles/TowerDefence.dir/Land/Landscape.cpp.o: ../activeUnits/Enemy.h
 CMakeFiles/TowerDefence.dir/Land/Landscape.cpp.o: ../activeUnits/Tower.h
 CMakeFiles/TowerDefence.dir/Land/Landscape.cpp.o: ../activeUnits/TowerMagic.h
@@ -89,6 +90,7 @@ CMakeFiles/TowerDefence.dir/Land/Landscape.cpp.o: /usr/local/include/SFML/Window
 CMakeFiles/TowerDefence.dir/Land/Landscape.cpp.o: /usr/local/include/SFML/Window/WindowHandle.hpp
 CMakeFiles/TowerDefence.dir/Land/Landscape.cpp.o: /usr/local/include/SFML/Window/WindowStyle.hpp
 
+CMakeFiles/TowerDefence.dir/activeUnits/Enemy.cpp.o: ../Stack.h
 CMakeFiles/TowerDefence.dir/activeUnits/Enemy.cpp.o: ../activeUnits/Enemy.cpp
 CMakeFiles/TowerDefence.dir/activeUnits/Enemy.cpp.o: ../activeUnits/Enemy.h
 CMakeFiles/TowerDefence.dir/activeUnits/Enemy.cpp.o: ../activeUnits/structs.h
@@ -169,6 +171,7 @@ CMakeFiles/TowerDefence.dir/activeUnits/Enemy.cpp.o: /usr/local/include/SFML/Win
 CMakeFiles/TowerDefence.dir/activeUnits/Enemy.cpp.o: /usr/local/include/SFML/Window/WindowHandle.hpp
 CMakeFiles/TowerDefence.dir/activeUnits/Enemy.cpp.o: /usr/local/include/SFML/Window/WindowStyle.hpp
 
+CMakeFiles/TowerDefence.dir/activeUnits/Tower.cpp.o: ../Stack.h
 CMakeFiles/TowerDefence.dir/activeUnits/Tower.cpp.o: ../activeUnits/Enemy.h
 CMakeFiles/TowerDefence.dir/activeUnits/Tower.cpp.o: ../activeUnits/Tower.cpp
 CMakeFiles/TowerDefence.dir/activeUnits/Tower.cpp.o: ../activeUnits/Tower.h
@@ -250,6 +253,7 @@ CMakeFiles/TowerDefence.dir/activeUnits/Tower.cpp.o: /usr/local/include/SFML/Win
 CMakeFiles/TowerDefence.dir/activeUnits/Tower.cpp.o: /usr/local/include/SFML/Window/WindowHandle.hpp
 CMakeFiles/TowerDefence.dir/activeUnits/Tower.cpp.o: /usr/local/include/SFML/Window/WindowStyle.hpp
 
+CMakeFiles/TowerDefence.dir/activeUnits/TowerMagic.cpp.o: ../Stack.h
 CMakeFiles/TowerDefence.dir/activeUnits/TowerMagic.cpp.o: ../activeUnits/Enemy.h
 CMakeFiles/TowerDefence.dir/activeUnits/TowerMagic.cpp.o: ../activeUnits/Tower.h
 CMakeFiles/TowerDefence.dir/activeUnits/TowerMagic.cpp.o: ../activeUnits/TowerMagic.cpp
@@ -333,6 +337,7 @@ CMakeFiles/TowerDefence.dir/activeUnits/TowerMagic.cpp.o: /usr/local/include/SFM
 CMakeFiles/TowerDefence.dir/activeUnits/TowerMagic.cpp.o: /usr/local/include/SFML/Window/WindowHandle.hpp
 CMakeFiles/TowerDefence.dir/activeUnits/TowerMagic.cpp.o: /usr/local/include/SFML/Window/WindowStyle.hpp
 
+CMakeFiles/TowerDefence.dir/activeUnits/TowerSimple.cpp.o: ../Stack.h
 CMakeFiles/TowerDefence.dir/activeUnits/TowerSimple.cpp.o: ../activeUnits/Enemy.h
 CMakeFiles/TowerDefence.dir/activeUnits/TowerSimple.cpp.o: ../activeUnits/Tower.h
 CMakeFiles/TowerDefence.dir/activeUnits/TowerSimple.cpp.o: ../activeUnits/TowerSimple.cpp
@@ -415,8 +420,10 @@ CMakeFiles/TowerDefence.dir/activeUnits/TowerSimple.cpp.o: /usr/local/include/SF
 CMakeFiles/TowerDefence.dir/activeUnits/TowerSimple.cpp.o: /usr/local/include/SFML/Window/WindowHandle.hpp
 CMakeFiles/TowerDefence.dir/activeUnits/TowerSimple.cpp.o: /usr/local/include/SFML/Window/WindowStyle.hpp
 
+CMakeFiles/TowerDefence.dir/activeUnits/TowerTrap.cpp.o: ../Stack.h
 CMakeFiles/TowerDefence.dir/activeUnits/TowerTrap.cpp.o: ../activeUnits/Enemy.h
 CMakeFiles/TowerDefence.dir/activeUnits/TowerTrap.cpp.o: ../activeUnits/Tower.h
+CMakeFiles/TowerDefence.dir/activeUnits/TowerTrap.cpp.o: ../activeUnits/TowerSimple.h
 CMakeFiles/TowerDefence.dir/activeUnits/TowerTrap.cpp.o: ../activeUnits/TowerTrap.cpp
 CMakeFiles/TowerDefence.dir/activeUnits/TowerTrap.cpp.o: ../activeUnits/TowerTrap.h
 CMakeFiles/TowerDefence.dir/activeUnits/TowerTrap.cpp.o: ../activeUnits/structs.h
@@ -742,6 +749,7 @@ CMakeFiles/TowerDefence.dir/squares/Forest.cpp.o: /usr/local/include/SFML/Window
 CMakeFiles/TowerDefence.dir/squares/Forest.cpp.o: /usr/local/include/SFML/Window/WindowHandle.hpp
 CMakeFiles/TowerDefence.dir/squares/Forest.cpp.o: /usr/local/include/SFML/Window/WindowStyle.hpp
 
+CMakeFiles/TowerDefence.dir/squares/Lair.cpp.o: ../Stack.h
 CMakeFiles/TowerDefence.dir/squares/Lair.cpp.o: ../activeUnits/Enemy.h
 CMakeFiles/TowerDefence.dir/squares/Lair.cpp.o: ../activeUnits/structs.h
 CMakeFiles/TowerDefence.dir/squares/Lair.cpp.o: ../squares/Lair.cpp
@@ -823,6 +831,7 @@ CMakeFiles/TowerDefence.dir/squares/Lair.cpp.o: /usr/local/include/SFML/Window/W
 CMakeFiles/TowerDefence.dir/squares/Lair.cpp.o: /usr/local/include/SFML/Window/WindowHandle.hpp
 CMakeFiles/TowerDefence.dir/squares/Lair.cpp.o: /usr/local/include/SFML/Window/WindowStyle.hpp
 
+CMakeFiles/TowerDefence.dir/squares/Road.cpp.o: ../Stack.h
 CMakeFiles/TowerDefence.dir/squares/Road.cpp.o: ../activeUnits/Enemy.h
 CMakeFiles/TowerDefence.dir/squares/Road.cpp.o: ../activeUnits/structs.h
 CMakeFiles/TowerDefence.dir/squares/Road.cpp.o: ../squares/Road.cpp

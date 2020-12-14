@@ -23,7 +23,13 @@ public:
 
     Enemy* getLowHP();
 
+    Enemy* getFirst();
+
     int addHere(Enemy*);
+
+    std::list<Enemy*>::iterator getIter() { return enemies.begin(); };
+
+    std::list<Enemy*>:: iterator getLIter() { return enemies.end(); };
 
     int deleteHere(Enemy*);
 };

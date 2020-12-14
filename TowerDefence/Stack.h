@@ -12,8 +12,6 @@
 template<typename T>
 class Stack;
 
-template<typename T>
-std::ostream& operator<<(std::ostream& os, const Stack<T>& s);
 
 template<typename T>
 class Stack
@@ -25,7 +23,7 @@ public:
     void push(const T& value);
     T pop();
 
-    inline T peek() const;
+    inline T peek();
     inline bool is_empty() const;
     inline void clear();
 
@@ -39,7 +37,6 @@ private:
 
     std::size_t _size;
 
-    friend std::ostream& operator<<<>(std::ostream& os, const Stack<T>& s);
 };
 
 
@@ -85,7 +82,7 @@ T Stack<T>::pop()
 
 
 template<typename T>
-inline T Stack<T>::peek() const
+inline T Stack<T>::peek()
 {
     if (is_empty())
     {
@@ -113,18 +110,5 @@ inline void Stack<T>::clear()
     _size = 0;
 }
 
-template<typename T>
-std::ostream& operator<<(std::ostream& os, const Stack<T>& s)
-{
-    auto tmp = s.top;
-
-    while(tmp)
-    {
-        os << tmp->value << " ";
-        tmp = tmp->next;
-    }
-
-    return os;
-}
 
 #endif //TOWERDEFENCE_STACK_H

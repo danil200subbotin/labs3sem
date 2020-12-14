@@ -30,7 +30,12 @@ Enemy* Road::getLowHP() {
         ++it_e;
     }
     return lowest;
+}
 
+Enemy* Road::getFirst() {
+    if (enemies.empty())
+        return nullptr;
+    return enemies.front();
 }
 
 int Road::addHere(Enemy* enemy) {

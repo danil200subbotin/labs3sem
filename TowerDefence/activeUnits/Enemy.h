@@ -10,7 +10,7 @@
 #include <string>
 #include <sstream>
 #include <utility>
-#include "Stack.h"
+#include "../Stack.h"
 
 
 class Enemy {
@@ -29,6 +29,8 @@ private:
 
     float speed;
 
+    int colourTime;
+
     int gold;
 
     float timeBeforePop;
@@ -37,7 +39,7 @@ private:
 
     struct Effect* effects[3];
 
-    Stack<*struct >
+    Stack<struct colourInd*> colour;
 
 
 public:
@@ -53,6 +55,10 @@ public:
     void setY(int newY) { y = newY; };
 
     int getX() { return x; };
+
+    float getSpeedKoaf();
+
+    int getDamageKoaf();
 
     int getY() { return y; };
 
@@ -70,9 +76,9 @@ public:
 
     void draw (sf::RenderWindow *window, sf::Text *text);
 
-    int addEffect (int which, int effectLevel);
+    int addEffect (struct Effect const, int effectType, int red, int green, int blue);
 
-    int damage (int);
+    int damage (int damage, int red, int green, int blue);
 
     int chekAndDeleteEffects ();
 };

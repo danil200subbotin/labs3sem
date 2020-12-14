@@ -7,25 +7,24 @@
 
 
 #include "structs.h"
-#include "Tower.h"
+#include "TowerSimple.h"
 
-class TowerTrap: public Tower {
+
+class TowerTrap: public TowerSimple {
 private:
     int damage;
     int range;
     static const Effect effectsTable[2];
+    bool boomed;
 
 public:
 
-    TowerTrap(int x, int y);
+    TowerTrap(int x, int y, std::list <Road*> *roadList);
 
     int getRange() override;
 
-    int getDamage() override;
-
     int attack() override;
 
-    int levelUp(int amountGold) override;
 };
 
 #endif //TOWERDEFENCE_TOWERTRAP_H

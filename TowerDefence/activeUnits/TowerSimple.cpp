@@ -31,10 +31,12 @@ int TowerSimple::levelUp(int castleGold) {
     }
     int i = getCost();
     ++level;
+    PATH = levelsTable[level].PATH;
     return i;
 }
 
 int TowerSimple::attack() {
+    int koaff = 0;
     std::list <Road*> :: iterator it_r;
     it_r = boomArea.begin();
     if (!boomArea.empty()) {
@@ -48,7 +50,8 @@ int TowerSimple::attack() {
                         lowest = (*it_r)->getLowHP();
                     }
                 }
-                lowest->damage(getDamage());
+                koaff = lowest->getDamageKoaf();
+                lowest->damage(getDamage() + koaff, 255, 0, 0);
             }
         }
     }
@@ -66,6 +69,6 @@ void TowerSimple::startRaload () {
 
 const struct TowerLevel TowerSimple::levelsTable[] = {
         {10, 1000, 3, 50, 2},
-        {30,700,4, 50, 2},
-        {50, 700, 4, 50, 2}
+        {15,700,4, 50, 2, "/Users/danilmorozov/Desktop/labsgit/TowerDefence/images/towerS2.png"},
+        {20, 700, 4, 50, 2, "/Users/danilmorozov/Desktop/labsgit/TowerDefence/images/towerS3.png"}
 } ;

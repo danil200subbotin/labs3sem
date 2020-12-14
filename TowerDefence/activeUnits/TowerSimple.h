@@ -18,6 +18,8 @@ struct TowerLevel{
     int price;
 
     int maxLevel;
+
+    std::string PATH;
 };
 
 

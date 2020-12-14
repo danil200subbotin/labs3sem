@@ -4,6 +4,7 @@
 CMakeFiles/TowerDefence.dir/Land/Landscape.cpp.o
  /Users/danilmorozov/Desktop/labsgit/TowerDefence/Land/Landscape.cpp
  /Users/danilmorozov/Desktop/labsgit/TowerDefence/Land/Landscape.h
+ /Users/danilmorozov/Desktop/labsgit/TowerDefence/Stack.h
  /Users/danilmorozov/Desktop/labsgit/TowerDefence/activeUnits/Enemy.h
  /Users/danilmorozov/Desktop/labsgit/TowerDefence/activeUnits/Tower.h
  /Users/danilmorozov/Desktop/labsgit/TowerDefence/activeUnits/TowerMagic.h
@@ -90,6 +91,7 @@ CMakeFiles/TowerDefence.dir/Land/Landscape.cpp.o
  /usr/local/include/SFML/Window/WindowHandle.hpp
  /usr/local/include/SFML/Window/WindowStyle.hpp
 CMakeFiles/TowerDefence.dir/activeUnits/Enemy.cpp.o
+ /Users/danilmorozov/Desktop/labsgit/TowerDefence/Stack.h
  /Users/danilmorozov/Desktop/labsgit/TowerDefence/activeUnits/Enemy.cpp
  /Users/danilmorozov/Desktop/labsgit/TowerDefence/activeUnits/Enemy.h
  /Users/danilmorozov/Desktop/labsgit/TowerDefence/activeUnits/structs.h
@@ -170,6 +172,7 @@ CMakeFiles/TowerDefence.dir/activeUnits/Enemy.cpp.o
  /usr/local/include/SFML/Window/WindowHandle.hpp
  /usr/local/include/SFML/Window/WindowStyle.hpp
 CMakeFiles/TowerDefence.dir/activeUnits/Tower.cpp.o
+ /Users/danilmorozov/Desktop/labsgit/TowerDefence/Stack.h
  /Users/danilmorozov/Desktop/labsgit/TowerDefence/activeUnits/Enemy.h
  /Users/danilmorozov/Desktop/labsgit/TowerDefence/activeUnits/Tower.cpp
  /Users/danilmorozov/Desktop/labsgit/TowerDefence/activeUnits/Tower.h
@@ -251,6 +254,7 @@ CMakeFiles/TowerDefence.dir/activeUnits/Tower.cpp.o
  /usr/local/include/SFML/Window/WindowHandle.hpp
  /usr/local/include/SFML/Window/WindowStyle.hpp
 CMakeFiles/TowerDefence.dir/activeUnits/TowerMagic.cpp.o
+ /Users/danilmorozov/Desktop/labsgit/TowerDefence/Stack.h
  /Users/danilmorozov/Desktop/labsgit/TowerDefence/activeUnits/Enemy.h
  /Users/danilmorozov/Desktop/labsgit/TowerDefence/activeUnits/Tower.h
  /Users/danilmorozov/Desktop/labsgit/TowerDefence/activeUnits/TowerMagic.cpp
@@ -334,6 +338,7 @@ CMakeFiles/TowerDefence.dir/activeUnits/TowerMagic.cpp.o
  /usr/local/include/SFML/Window/WindowHandle.hpp
  /usr/local/include/SFML/Window/WindowStyle.hpp
 CMakeFiles/TowerDefence.dir/activeUnits/TowerSimple.cpp.o
+ /Users/danilmorozov/Desktop/labsgit/TowerDefence/Stack.h
  /Users/danilmorozov/Desktop/labsgit/TowerDefence/activeUnits/Enemy.h
  /Users/danilmorozov/Desktop/labsgit/TowerDefence/activeUnits/Tower.h
  /Users/danilmorozov/Desktop/labsgit/TowerDefence/activeUnits/TowerSimple.cpp
@@ -416,8 +421,10 @@ CMakeFiles/TowerDefence.dir/activeUnits/TowerSimple.cpp.o
  /usr/local/include/SFML/Window/WindowHandle.hpp
  /usr/local/include/SFML/Window/WindowStyle.hpp
 CMakeFiles/TowerDefence.dir/activeUnits/TowerTrap.cpp.o
+ /Users/danilmorozov/Desktop/labsgit/TowerDefence/Stack.h
  /Users/danilmorozov/Desktop/labsgit/TowerDefence/activeUnits/Enemy.h
  /Users/danilmorozov/Desktop/labsgit/TowerDefence/activeUnits/Tower.h
+ /Users/danilmorozov/Desktop/labsgit/TowerDefence/activeUnits/TowerSimple.h
  /Users/danilmorozov/Desktop/labsgit/TowerDefence/activeUnits/TowerTrap.cpp
  /Users/danilmorozov/Desktop/labsgit/TowerDefence/activeUnits/TowerTrap.h
  /Users/danilmorozov/Desktop/labsgit/TowerDefence/activeUnits/structs.h
@@ -743,6 +750,7 @@ CMakeFiles/TowerDefence.dir/squares/Forest.cpp.o
  /usr/local/include/SFML/Window/WindowHandle.hpp
  /usr/local/include/SFML/Window/WindowStyle.hpp
 CMakeFiles/TowerDefence.dir/squares/Lair.cpp.o
+ /Users/danilmorozov/Desktop/labsgit/TowerDefence/Stack.h
  /Users/danilmorozov/Desktop/labsgit/TowerDefence/activeUnits/Enemy.h
  /Users/danilmorozov/Desktop/labsgit/TowerDefence/activeUnits/structs.h
  /Users/danilmorozov/Desktop/labsgit/TowerDefence/squares/Lair.cpp
@@ -824,6 +832,7 @@ CMakeFiles/TowerDefence.dir/squares/Lair.cpp.o
  /usr/local/include/SFML/Window/WindowHandle.hpp
  /usr/local/include/SFML/Window/WindowStyle.hpp
 CMakeFiles/TowerDefence.dir/squares/Road.cpp.o
+ /Users/danilmorozov/Desktop/labsgit/TowerDefence/Stack.h
  /Users/danilmorozov/Desktop/labsgit/TowerDefence/activeUnits/Enemy.h
  /Users/danilmorozov/Desktop/labsgit/TowerDefence/activeUnits/structs.h
  /Users/danilmorozov/Desktop/labsgit/TowerDefence/squares/Road.cpp

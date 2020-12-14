@@ -12,8 +12,6 @@ using namespace sf;
 int main()
 {
 
-    Stack<std::string> headers;
-
     Font font;                      //шрифт
     font.loadFromFile("/Users/danilmorozov/Desktop/labsgit/TowerDefence/CyrilicOld.TTF");
     Text text("", font, 20);
@@ -24,9 +22,18 @@ int main()
     Landscape land (20, 20);
 
     //nt Landscape::pushEnemy(int x, int y, int hitPoints, int maxHP, float speed, int gold, float time)
-    headers.push("First Wave");
+
     land.pushEnemy(0, 0, 150, 20, 0.06, 150, 2000);
-    headers.push("Second Wave");
+    land.pushEnemy(0, 0, 150, 20, 0.06, 150, 2500);
+    land.pushEnemy(0, 0, 200, 20, 0.06, 150, 5000);
+    land.pushEnemy(0, 0, 250, 20, 0.06, 150, 6000);
+    land.pushEnemy(0, 0, 100, 20, 0.09, 200, 7000);
+    land.pushEnemy(0, 0, 300, 20, 0.06, 150, 8000);
+    land.pushEnemy(0, 0, 300, 20, 0.06, 150, 8100);
+    land.pushEnemy(0, 0, 300, 20, 0.06, 150, 8200);
+    land.pushEnemy(0, 0, 300, 20, 0.06, 150, 8300);
+    land.pushEnemy(0, 0, 300, 20, 0.06, 150, 8400);
+    land.pushEnemy(0, 0, 300, 20, 0.06, 150, 8500);
     land.pushEnemy(0, 0, 1000, 100, 0.03, 500, 20000);
 
     RenderWindow window(VideoMode(1000, 1000), "Tower Defence");
