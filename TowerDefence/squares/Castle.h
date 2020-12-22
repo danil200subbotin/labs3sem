@@ -9,6 +9,14 @@
 #include "Square.h"
 #include <stdexcept>
 
+/*!
+	\brief Класс замок, хранит некоторые данные об игре.
+
+	Содержит:
+    Баланс игрока, остаток хитпойнтов замка
+*/
+
+
 class Castle: public Square {
 private:
 
@@ -26,6 +34,10 @@ public:
     int MONEY(int gold);
 
     int getGold() const { return amountGold; };
+
+    /*!
+  Нанесение урона замку
+  */
 
     int damage(int);
 

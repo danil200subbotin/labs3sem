@@ -1,11 +1,15 @@
 cmake_minimum_required(VERSION 3.17)
 project(TowerDefence)
 
+include_directories(lib/googletest-master/googletest/include)
+include_directories(lib/googletest-master/googlemock/include)
+
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(TowerDefence main.cpp squares/Square.cpp squares/Square.h squares/Castle.cpp squares/Castle.h squares/Lair.cpp squares/Lair.h squares/Road.cpp squares/Road.h squares/Forest.cpp squares/Forest.h activeUnits/Tower.cpp activeUnits/Tower.h "Land/Landscape.cpp" "Land/Landscape.h" activeUnits/TowerSimple.cpp activeUnits/TowerSimple.h activeUnits/TowerMagic.cpp activeUnits/TowerMagic.h activeUnits/Enemy.cpp activeUnits/Enemy.h activeUnits/TowerTrap.cpp activeUnits/TowerTrap.h activeUnits/structs.h Stack.h)
 
-
+add_subdirectory(lib/googletest-master)
+target_link_libraries(TowerDefence gtest gtest_main)
 
 
 set(SFML_INCLUDE_DIR "/SFML/include")

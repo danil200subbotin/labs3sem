@@ -1,0 +1,77 @@
+\hypertarget{class_road}{}\doxysection{Road Class Reference}
+\label{class_road}\index{Road@{Road}}
+
+
+Класс-\/дорога.  
+
+
+
+
+{\ttfamily \#include $<$Road.\+h$>$}
+
+Inheritance diagram for Road\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_road}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_road_adf96d914718db461bddfbc5e5a0312cc}\label{class_road_adf96d914718db461bddfbc5e5a0312cc}} 
+{\bfseries Road} (int x, int y)
+\item 
+\mbox{\Hypertarget{class_road_aed6796960bbe9d097b1828eb0f12b413}\label{class_road_aed6796960bbe9d097b1828eb0f12b413}} 
+int {\bfseries set\+Next} (\mbox{\hyperlink{class_road}{Road}} $\ast$)
+\item 
+\mbox{\Hypertarget{class_road_a4d60c9ea95ec15ddec47b360743e381f}\label{class_road_a4d60c9ea95ec15ddec47b360743e381f}} 
+\mbox{\hyperlink{class_road}{Road}} $\ast$ {\bfseries get\+Next} ()
+\item 
+\mbox{\hyperlink{class_enemy}{Enemy}} $\ast$ \mbox{\hyperlink{class_road_a5e76e835ef2513dd5adb85236307bdb6}{get\+Low\+HP}} ()
+\item 
+\mbox{\Hypertarget{class_road_ab0f067b318bf91dfc3dfb6c5f58f86c6}\label{class_road_ab0f067b318bf91dfc3dfb6c5f58f86c6}} 
+\mbox{\hyperlink{class_enemy}{Enemy}} $\ast$ {\bfseries get\+First} ()
+\item 
+int \mbox{\hyperlink{class_road_a350f5d2ad970653df18fbcdcf32c2bf2}{add\+Here}} (\mbox{\hyperlink{class_enemy}{Enemy}} $\ast$)
+\item 
+\mbox{\Hypertarget{class_road_a13318eb90ead0eebb2bc2a92d621d210}\label{class_road_a13318eb90ead0eebb2bc2a92d621d210}} 
+std\+::list$<$ \mbox{\hyperlink{class_enemy}{Enemy}} $\ast$ $>$\+::iterator {\bfseries get\+Iter} ()
+\item 
+\mbox{\Hypertarget{class_road_a8a37ad0c8acaf5a293acd2e5dd400ecb}\label{class_road_a8a37ad0c8acaf5a293acd2e5dd400ecb}} 
+std\+::list$<$ \mbox{\hyperlink{class_enemy}{Enemy}} $\ast$ $>$\+::iterator {\bfseries get\+L\+Iter} ()
+\item 
+int \mbox{\hyperlink{class_road_a90c266e5715aa896407cf8376e590f4d}{delete\+Here}} (\mbox{\hyperlink{class_enemy}{Enemy}} $\ast$)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Класс-\/дорога. 
+
+Содержит\+: Список указателей на врагов, которые сейчас находятся на данном участке дороги И указатель на следующую дорогу 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_road_a350f5d2ad970653df18fbcdcf32c2bf2}\label{class_road_a350f5d2ad970653df18fbcdcf32c2bf2}} 
+\index{Road@{Road}!addHere@{addHere}}
+\index{addHere@{addHere}!Road@{Road}}
+\doxysubsubsection{\texorpdfstring{addHere()}{addHere()}}
+{\footnotesize\ttfamily int Road\+::add\+Here (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_enemy}{Enemy}} $\ast$}]{enemy }\end{DoxyParamCaption})}
+
+Добавление противника на этот элемент дороги \mbox{\Hypertarget{class_road_a90c266e5715aa896407cf8376e590f4d}\label{class_road_a90c266e5715aa896407cf8376e590f4d}} 
+\index{Road@{Road}!deleteHere@{deleteHere}}
+\index{deleteHere@{deleteHere}!Road@{Road}}
+\doxysubsubsection{\texorpdfstring{deleteHere()}{deleteHere()}}
+{\footnotesize\ttfamily int Road\+::delete\+Here (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_enemy}{Enemy}} $\ast$}]{enemy }\end{DoxyParamCaption})}
+
+Удаление противника с этого элемента дороги \mbox{\Hypertarget{class_road_a5e76e835ef2513dd5adb85236307bdb6}\label{class_road_a5e76e835ef2513dd5adb85236307bdb6}} 
+\index{Road@{Road}!getLowHP@{getLowHP}}
+\index{getLowHP@{getLowHP}!Road@{Road}}
+\doxysubsubsection{\texorpdfstring{getLowHP()}{getLowHP()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_enemy}{Enemy}} $\ast$ Road\+::get\+Low\+HP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Возврашает указатель на противника с наименьшим хп на данном участке дороги 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+squares/Road.\+h\item 
+squares/Road.\+cpp\end{DoxyCompactItemize}

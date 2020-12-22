@@ -6,5 +6,5 @@ CXX_FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sd
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/danilmorozov/Desktop/labsgit/TowerDefence/SFML_INCLUDE_DIR -isystem /usr/local/include 
+CXX_INCLUDES = -I/Users/danilmorozov/Desktop/labsgit/TowerDefence/lib/googletest-master/googlemock/include -I/Users/danilmorozov/Desktop/labsgit/TowerDefence/SFML_INCLUDE_DIR -isystem /Users/danilmorozov/Desktop/labsgit/TowerDefence/lib/googletest-master/googletest/include -isystem /Users/danilmorozov/Desktop/labsgit/TowerDefence/lib/googletest-master/googletest -isystem /usr/local/include 
 

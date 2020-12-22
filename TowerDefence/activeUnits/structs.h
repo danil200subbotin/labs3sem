@@ -5,6 +5,16 @@
 #ifndef TOWERDEFENCE_STRUCTS_H
 #define TOWERDEFENCE_STRUCTS_H
 
+/*!
+\file
+\brief Файл со структурами, используемыми несколькими классами
+*/
+
+
+/*!
+	\brief Таблица эффектов магической башни и ловушки
+*/
+
 struct Effect {
     int slow;
 
@@ -12,6 +22,10 @@ struct Effect {
 
     int time;
 };
+
+/*!
+	\brief Таблица эффектов цветов
+*/
 
 struct colourInd {
     int red;

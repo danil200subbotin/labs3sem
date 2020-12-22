@@ -6,7 +6,7 @@
 
 
 Road::Road(int x, int y): Square(x, y) {
-    PATH = "/Users/danilmorozov/Desktop/labsgit/TowerDefence/images/road3.png";
+    PATH = "/Users/danilmorozov/Desktop/labsgit/TowerDefence/images/roud5.png";
 };
 
 int Road::setNext(Road * nextR) {

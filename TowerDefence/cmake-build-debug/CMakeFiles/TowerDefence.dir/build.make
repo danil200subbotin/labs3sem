@@ -264,9 +264,12 @@ TowerDefence: CMakeFiles/TowerDefence.dir/activeUnits/TowerMagic.cpp.o
 TowerDefence: CMakeFiles/TowerDefence.dir/activeUnits/Enemy.cpp.o
 TowerDefence: CMakeFiles/TowerDefence.dir/activeUnits/TowerTrap.cpp.o
 TowerDefence: CMakeFiles/TowerDefence.dir/build.make
+TowerDefence: lib/libgtestd.a
+TowerDefence: lib/libgtest_maind.a
 TowerDefence: /usr/local/lib/libsfml-graphics.2.5.1.dylib
 TowerDefence: /usr/local/lib/libsfml-window.2.5.1.dylib
 TowerDefence: /usr/local/lib/libsfml-system.2.5.1.dylib
+TowerDefence: lib/libgtestd.a
 TowerDefence: CMakeFiles/TowerDefence.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/danilmorozov/Desktop/labsgit/TowerDefence/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable TowerDefence"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TowerDefence.dir/link.txt --verbose=$(VERBOSE)

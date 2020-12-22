@@ -1,0 +1,124 @@
+\hypertarget{interface_s_f_window}{}\doxysection{S\+F\+Window Class Reference}
+\label{interface_s_f_window}\index{SFWindow@{SFWindow}}
+
+
+Here we redefine some methods to allow grabbing fullscreen events.  
+
+
+
+
+{\ttfamily \#import $<$S\+F\+Window.\+h$>$}
+
+Inheritance diagram for S\+F\+Window\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_s_f_window}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(B\+O\+OL) -\/ \mbox{\hyperlink{interface_s_f_window_a0da5b7bd59d1216226bd7f7f86bb975a}{accepts\+First\+Responder}}
+\begin{DoxyCompactList}\small\item\em Allow to grab fullscreen events. \end{DoxyCompactList}\item 
+(B\+O\+OL) -\/ \mbox{\hyperlink{interface_s_f_window_ae977c0709f2586a6e51b76ff19c81c8b}{can\+Become\+Key\+Window}}
+\begin{DoxyCompactList}\small\item\em Allow to grab fullscreen events. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_s_f_window_ac4100e210b68ce6e6371858ff72127ae}{key\+Down\+:}}
+\begin{DoxyCompactList}\small\item\em Prevent system alert. \end{DoxyCompactList}\item 
+(void) -\/ \mbox{\hyperlink{interface_s_f_window_aaf5ec61b825323b98c57fdbf5deab7ac}{perform\+Close\+:}}
+\begin{DoxyCompactList}\small\item\em This action method simulates the user clicking the close button. \end{DoxyCompactList}\item 
+(B\+O\+OL) -\/ \mbox{\hyperlink{interface_s_f_window_a49a3a95d95836e320fbabf0988fd261c}{validate\+Menu\+Item\+:}}
+\begin{DoxyCompactList}\small\item\em Enabling or disabling a specific menu item. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Here we redefine some methods to allow grabbing fullscreen events. 
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{interface_s_f_window_a0da5b7bd59d1216226bd7f7f86bb975a}\label{interface_s_f_window_a0da5b7bd59d1216226bd7f7f86bb975a}} 
+\index{SFWindow@{SFWindow}!acceptsFirstResponder@{acceptsFirstResponder}}
+\index{acceptsFirstResponder@{acceptsFirstResponder}!SFWindow@{SFWindow}}
+\doxysubsubsection{\texorpdfstring{acceptsFirstResponder}{acceptsFirstResponder}}
+{\footnotesize\ttfamily -\/ (B\+O\+OL) accepts\+First\+Responder \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Allow to grab fullscreen events. 
+
+accepts\+First\+Responder and can\+Become\+Key\+Window messages must return Y\+ES to grab fullscreen events.
+
+See \href{https://stackoverflow.com/questions/999464/fullscreen-key-down-actions}{\texttt{ https\+://stackoverflow.\+com/questions/999464/fullscreen-\/key-\/down-\/actions}}
+
+\begin{DoxyReturn}{Returns}
+Y\+ES 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_s_f_window_ae977c0709f2586a6e51b76ff19c81c8b}\label{interface_s_f_window_ae977c0709f2586a6e51b76ff19c81c8b}} 
+\index{SFWindow@{SFWindow}!canBecomeKeyWindow@{canBecomeKeyWindow}}
+\index{canBecomeKeyWindow@{canBecomeKeyWindow}!SFWindow@{SFWindow}}
+\doxysubsubsection{\texorpdfstring{canBecomeKeyWindow}{canBecomeKeyWindow}}
+{\footnotesize\ttfamily -\/ (B\+O\+OL) can\+Become\+Key\+Window \begin{DoxyParamCaption}{ }\end{DoxyParamCaption}}
+
+
+
+Allow to grab fullscreen events. 
+
+See accepts\+First\+Responder documentation above.
+
+\begin{DoxyReturn}{Returns}
+Y\+ES 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_s_f_window_ac4100e210b68ce6e6371858ff72127ae}\label{interface_s_f_window_ac4100e210b68ce6e6371858ff72127ae}} 
+\index{SFWindow@{SFWindow}!keyDown:@{keyDown:}}
+\index{keyDown:@{keyDown:}!SFWindow@{SFWindow}}
+\doxysubsubsection{\texorpdfstring{keyDown:}{keyDown:}}
+{\footnotesize\ttfamily -\/ (void) key\+Down\+: \begin{DoxyParamCaption}\item[{(N\+S\+Event$\ast$)}]{the\+Event }\end{DoxyParamCaption}}
+
+
+
+Prevent system alert. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em the\+Event} & a Cocoa event \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_s_f_window_aaf5ec61b825323b98c57fdbf5deab7ac}\label{interface_s_f_window_aaf5ec61b825323b98c57fdbf5deab7ac}} 
+\index{SFWindow@{SFWindow}!performClose:@{performClose:}}
+\index{performClose:@{performClose:}!SFWindow@{SFWindow}}
+\doxysubsubsection{\texorpdfstring{performClose:}{performClose:}}
+{\footnotesize\ttfamily -\/ (void) perform\+Close\+: \begin{DoxyParamCaption}\item[{(id)}]{sender }\end{DoxyParamCaption}}
+
+
+
+This action method simulates the user clicking the close button. 
+
+Override N\+S\+Window implementation, see implementation for details
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & The message\textquotesingle{}s sender \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{interface_s_f_window_a49a3a95d95836e320fbabf0988fd261c}\label{interface_s_f_window_a49a3a95d95836e320fbabf0988fd261c}} 
+\index{SFWindow@{SFWindow}!validateMenuItem:@{validateMenuItem:}}
+\index{validateMenuItem:@{validateMenuItem:}!SFWindow@{SFWindow}}
+\doxysubsubsection{\texorpdfstring{validateMenuItem:}{validateMenuItem:}}
+{\footnotesize\ttfamily -\/ (B\+O\+OL) validate\+Menu\+Item\+: \begin{DoxyParamCaption}\item[{(N\+S\+Menu\+Item$\ast$)}]{menu\+Item }\end{DoxyParamCaption}}
+
+
+
+Enabling or disabling a specific menu item. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em menu\+Item} & An N\+S\+Menu\+Item object that represents the menu item\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Y\+ES to enable menu\+Item, NO to disable it. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/danilmorozov/\+Desktop/labsgit/\+Tower\+Defence/\+S\+F\+M\+L.\+1/src/\+S\+F\+M\+L/\+Window/\+O\+S\+X/S\+F\+Window.\+h\item 
+/\+Users/danilmorozov/\+Desktop/labsgit/\+Tower\+Defence/\+S\+F\+M\+L.\+1/src/\+S\+F\+M\+L/\+Window/\+O\+S\+X/S\+F\+Window.\+m\end{DoxyCompactItemize}

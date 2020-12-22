@@ -19,7 +19,9 @@
 #include <SFML/Window.hpp>
 #include <random>
 #include <iostream>
-
+/*!
+	\brief структура, содержащая всех ключевых юнитов
+ */
 
 struct actUnits{
     std::list<TowerSimple*> simpleTower;
@@ -35,6 +37,18 @@ struct actUnits{
     std::list<Enemy*> enemies;
 
 };
+
+/*!
+	\brief Класс-контейнер, отавечающий за работу всего вместе.
+
+	Содержит:
+    Размеры Карты, Указатель на первую дорогу от логова, Указатель на замок, Указатель на логово
+
+    Содержит списки:
+    Простых башен, Магических башен, ловушек, леса, дорог, врагов
+
+    Конструктор данного класса создает необходимые для игры вещи
+*/
 
 class Landscape {
 private:
@@ -71,11 +85,26 @@ public:
 
     int getCastleY() const;
 
+    /*!
+   Обновляет позиции проивников на карте
+   */
+
+
     int updateEnemies(float);
 
     int setTower(int, int, int);
 
+    /*!
+   Добавление противника из логова на дорогу
+   */
+
+
     int pushEnemy(int x, int y, int hitPoints, int maxHP, float speed, int gold, float time);
+
+    /*!
+   Добавление башни
+   */
+
 
     int addTower (int x, int y, int type, std::list <Road*> *roadList);
 
@@ -93,9 +122,18 @@ public:
 
     bool isTower (int x, int y);
 
+
+    /*!
+   Улучшение башни
+   */
+
     int updateTower (int x, int y);
 
     std::list <Road*>* getRoad();
+
+    /*!
+  Огонь из всех орудий и ловушек (если выполнены условия)
+  */
 
     void fire(float time);
 

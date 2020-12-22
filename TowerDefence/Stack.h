@@ -9,9 +9,15 @@
 #include <cstdlib>
 #include <string>
 
+
+/*!
+	\brief Класс-шаблон
+
+    Содержит шаблон класса Stack
+*/
+
 template<typename T>
 class Stack;
-
 
 template<typename T>
 class Stack

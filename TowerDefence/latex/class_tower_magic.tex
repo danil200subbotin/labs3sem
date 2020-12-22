@@ -1,0 +1,56 @@
+\hypertarget{class_tower_magic}{}\doxysection{Tower\+Magic Struct Reference}
+\label{class_tower_magic}\index{TowerMagic@{TowerMagic}}
+
+
+Класс, отавечающий за магическую башню  
+
+
+
+
+{\ttfamily \#include $<$Tower\+Magic.\+h$>$}
+
+Inheritance diagram for Tower\+Magic\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_tower_magic}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_tower_magic_a6fb9e920814d84e236f62220376191eb}{attack}} () override
+\item 
+\mbox{\Hypertarget{class_tower_magic_a0ef70a762e544815cb3fd90ffccc7a96}\label{class_tower_magic_a0ef70a762e544815cb3fd90ffccc7a96}} 
+{\bfseries Tower\+Magic} (int x, int y, std\+::list$<$ \mbox{\hyperlink{class_road}{Road}} $\ast$ $>$ $\ast$road\+List)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_tower_magic_a4fa0a0afc8187e8037610c9a0bf98bc6}\label{class_tower_magic_a4fa0a0afc8187e8037610c9a0bf98bc6}} 
+static const \mbox{\hyperlink{struct_effect}{Effect}} {\bfseries effects\+Table} \mbox{[}3\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Класс, отавечающий за магическую башню 
+
+Относительно простой башни тут перегружена атака, а так же добавлены статические стуктуры с эффектами башен 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_tower_magic_a6fb9e920814d84e236f62220376191eb}\label{class_tower_magic_a6fb9e920814d84e236f62220376191eb}} 
+\index{TowerMagic@{TowerMagic}!attack@{attack}}
+\index{attack@{attack}!TowerMagic@{TowerMagic}}
+\doxysubsubsection{\texorpdfstring{attack()}{attack()}}
+{\footnotesize\ttfamily int Tower\+Magic\+::attack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Башня производит выстрел в противника с наименьшим количеством HP из радиуса ее действия 
+
+Reimplemented from \mbox{\hyperlink{class_tower_simple_a6f67a28037cb7a72c84c0028c9e09dbf}{Tower\+Simple}}.
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+active\+Units/Tower\+Magic.\+h\item 
+active\+Units/Tower\+Magic.\+cpp\end{DoxyCompactItemize}

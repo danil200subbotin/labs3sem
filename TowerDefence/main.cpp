@@ -9,6 +9,13 @@
 
 using namespace sf;
 
+/*!
+\file
+\brief Файл с игровым мейном
+
+Содержит создание поля и визуализацию игрового процесса.
+*/
+
 int main()
 {
 
@@ -60,6 +67,7 @@ int main()
   //      std::cout << tiktime << std::endl;
 
         if (tiktime > mtictime) {
+
             land.updateEnemies(tiktime);
             land.fire(tiktime);
             tiktime = 0;

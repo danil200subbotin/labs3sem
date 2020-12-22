@@ -1,0 +1,57 @@
+\hypertarget{class_enemies_lair}{}\doxysection{Enemies\+Lair Class Reference}
+\label{class_enemies_lair}\index{EnemiesLair@{EnemiesLair}}
+
+
+Класс-\/логово.  
+
+
+
+
+{\ttfamily \#include $<$Lair.\+h$>$}
+
+Inheritance diagram for Enemies\+Lair\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_enemies_lair}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_enemies_lair_a095505abb7c07ac9b5429e55647d3cc5}\label{class_enemies_lair_a095505abb7c07ac9b5429e55647d3cc5}} 
+{\bfseries Enemies\+Lair} (int, int)
+\item 
+int \mbox{\hyperlink{class_enemies_lair_ac655c74746d33b005a72c956d5e947b5}{push\+Enemy}} (struct \mbox{\hyperlink{structenemy_time}{enemy\+Time}} \&\mbox{\hyperlink{structenemy_time}{enemy\+Time}})
+\item 
+int \mbox{\hyperlink{class_enemies_lair_ad4d5c1bf465453d8d44effb2f7f95094}{pop\+Next}} ()
+\item 
+\mbox{\Hypertarget{class_enemies_lair_a45b495c4917dd65d62659110c9bf7bba}\label{class_enemies_lair_a45b495c4917dd65d62659110c9bf7bba}} 
+int {\bfseries Render} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Класс-\/логово. 
+
+Содержит\+: Этот класс содержт в себе список структур, содержащих ссылки на врагов и всемя до их выхода из логова 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_enemies_lair_ad4d5c1bf465453d8d44effb2f7f95094}\label{class_enemies_lair_ad4d5c1bf465453d8d44effb2f7f95094}} 
+\index{EnemiesLair@{EnemiesLair}!popNext@{popNext}}
+\index{popNext@{popNext}!EnemiesLair@{EnemiesLair}}
+\doxysubsubsection{\texorpdfstring{popNext()}{popNext()}}
+{\footnotesize\ttfamily int Enemies\+Lair\+::pop\+Next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Достаем на дорогу следующего противника \mbox{\Hypertarget{class_enemies_lair_ac655c74746d33b005a72c956d5e947b5}\label{class_enemies_lair_ac655c74746d33b005a72c956d5e947b5}} 
+\index{EnemiesLair@{EnemiesLair}!pushEnemy@{pushEnemy}}
+\index{pushEnemy@{pushEnemy}!EnemiesLair@{EnemiesLair}}
+\doxysubsubsection{\texorpdfstring{pushEnemy()}{pushEnemy()}}
+{\footnotesize\ttfamily int Enemies\+Lair\+::push\+Enemy (\begin{DoxyParamCaption}\item[{struct \mbox{\hyperlink{structenemy_time}{enemy\+Time}} \&}]{enemy\+Time }\end{DoxyParamCaption})}
+
+Добавление противника в логово 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+squares/Lair.\+h\item 
+squares/Lair.\+cpp\end{DoxyCompactItemize}

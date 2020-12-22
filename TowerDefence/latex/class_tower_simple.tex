@@ -1,0 +1,132 @@
+\hypertarget{class_tower_simple}{}\doxysection{Tower\+Simple Struct Reference}
+\label{class_tower_simple}\index{TowerSimple@{TowerSimple}}
+
+
+Класс, отавечающий за обычную башню  
+
+
+
+
+{\ttfamily \#include $<$Tower\+Simple.\+h$>$}
+
+Inheritance diagram for Tower\+Simple\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_tower_simple}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_tower_simple_a8b0f55ad3954c67fca938a9b4155837c}\label{class_tower_simple_a8b0f55ad3954c67fca938a9b4155837c}} 
+{\bfseries Tower\+Simple} (int x, int y, std\+::list$<$ \mbox{\hyperlink{class_road}{Road}} $\ast$ $>$ $\ast$road\+List)
+\item 
+int \mbox{\hyperlink{class_tower_simple_a6f67a28037cb7a72c84c0028c9e09dbf}{attack}} () override
+\item 
+int \mbox{\hyperlink{class_tower_simple_ad9db471a9f0b5c3d2f942e2f3cc80879}{level\+Up}} (int amount\+Gold) final
+\item 
+int \mbox{\hyperlink{class_tower_simple_a45265e84214c194f2ba891ee47e26fc2}{get\+Range}} () override
+\item 
+int \mbox{\hyperlink{class_tower_simple_a09c46b089415e0f67544002557458091}{get\+Damage}} () override
+\item 
+\mbox{\Hypertarget{class_tower_simple_a788994c3844190ce73c9aaff33b2b81f}\label{class_tower_simple_a788994c3844190ce73c9aaff33b2b81f}} 
+int {\bfseries get\+Cost} ()
+\item 
+int \mbox{\hyperlink{class_tower_simple_a9fc5410f8f5895f7ea4cb16102e6371e}{get\+Coll\+Down}} ()
+\item 
+void \mbox{\hyperlink{class_tower_simple_a61445efaffe43c4268202ffc9ca193da}{minus\+Cool\+Down}} (float)
+\item 
+void \mbox{\hyperlink{class_tower_simple_aefd7e0f2071ae844ec1fced48c52ed03}{start\+Raload}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_tower_simple_af9586c7e1cdd5ac88c38e9871066ba86}\label{class_tower_simple_af9586c7e1cdd5ac88c38e9871066ba86}} 
+static const \mbox{\hyperlink{struct_tower_level}{Tower\+Level}} {\bfseries levels\+Table} \mbox{[}3\mbox{]}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Класс, отавечающий за обычную башню 
+
+Тут определяются все виртуальные методы абстрактного класса Башня. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_tower_simple_a6f67a28037cb7a72c84c0028c9e09dbf}\label{class_tower_simple_a6f67a28037cb7a72c84c0028c9e09dbf}} 
+\index{TowerSimple@{TowerSimple}!attack@{attack}}
+\index{attack@{attack}!TowerSimple@{TowerSimple}}
+\doxysubsubsection{\texorpdfstring{attack()}{attack()}}
+{\footnotesize\ttfamily int Tower\+Simple\+::attack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Башня производит выстрел в противника с наименьшим количеством HP из радиуса ее действия 
+
+Implements \mbox{\hyperlink{class_tower}{Tower}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_tower_trap_a921c895aa92da7971eeef56e419f5da9}{Tower\+Trap}}, and \mbox{\hyperlink{class_tower_magic_a6fb9e920814d84e236f62220376191eb}{Tower\+Magic}}.
+
+\mbox{\Hypertarget{class_tower_simple_a9fc5410f8f5895f7ea4cb16102e6371e}\label{class_tower_simple_a9fc5410f8f5895f7ea4cb16102e6371e}} 
+\index{TowerSimple@{TowerSimple}!getCollDown@{getCollDown}}
+\index{getCollDown@{getCollDown}!TowerSimple@{TowerSimple}}
+\doxysubsubsection{\texorpdfstring{getCollDown()}{getCollDown()}}
+{\footnotesize\ttfamily int Tower\+Simple\+::get\+Coll\+Down (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Позволяет встат башне на перезарядку \mbox{\Hypertarget{class_tower_simple_a09c46b089415e0f67544002557458091}\label{class_tower_simple_a09c46b089415e0f67544002557458091}} 
+\index{TowerSimple@{TowerSimple}!getDamage@{getDamage}}
+\index{getDamage@{getDamage}!TowerSimple@{TowerSimple}}
+\doxysubsubsection{\texorpdfstring{getDamage()}{getDamage()}}
+{\footnotesize\ttfamily int Tower\+Simple\+::get\+Damage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Возвращает текущий урон от башни 
+
+Implements \mbox{\hyperlink{class_tower}{Tower}}.
+
+\mbox{\Hypertarget{class_tower_simple_a45265e84214c194f2ba891ee47e26fc2}\label{class_tower_simple_a45265e84214c194f2ba891ee47e26fc2}} 
+\index{TowerSimple@{TowerSimple}!getRange@{getRange}}
+\index{getRange@{getRange}!TowerSimple@{TowerSimple}}
+\doxysubsubsection{\texorpdfstring{getRange()}{getRange()}}
+{\footnotesize\ttfamily int Tower\+Simple\+::get\+Range (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Возвращает радиус действия башни 
+
+Implements \mbox{\hyperlink{class_tower}{Tower}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_tower_trap_aab8f3f9422348e3ba6e2fbde6240b726}{Tower\+Trap}}.
+
+\mbox{\Hypertarget{class_tower_simple_ad9db471a9f0b5c3d2f942e2f3cc80879}\label{class_tower_simple_ad9db471a9f0b5c3d2f942e2f3cc80879}} 
+\index{TowerSimple@{TowerSimple}!levelUp@{levelUp}}
+\index{levelUp@{levelUp}!TowerSimple@{TowerSimple}}
+\doxysubsubsection{\texorpdfstring{levelUp()}{levelUp()}}
+{\footnotesize\ttfamily int Tower\+Simple\+::level\+Up (\begin{DoxyParamCaption}\item[{int}]{amount\+Gold }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+Увеличивает уровень башни, если достаточно средств 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em amount\+Gold} & количетво средств в замке \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{class_tower}{Tower}}.
+
+\mbox{\Hypertarget{class_tower_simple_a61445efaffe43c4268202ffc9ca193da}\label{class_tower_simple_a61445efaffe43c4268202ffc9ca193da}} 
+\index{TowerSimple@{TowerSimple}!minusCoolDown@{minusCoolDown}}
+\index{minusCoolDown@{minusCoolDown}!TowerSimple@{TowerSimple}}
+\doxysubsubsection{\texorpdfstring{minusCoolDown()}{minusCoolDown()}}
+{\footnotesize\ttfamily void Tower\+Simple\+::minus\+Cool\+Down (\begin{DoxyParamCaption}\item[{float}]{time }\end{DoxyParamCaption})}
+
+Уменьшает перезарядку \mbox{\Hypertarget{class_tower_simple_aefd7e0f2071ae844ec1fced48c52ed03}\label{class_tower_simple_aefd7e0f2071ae844ec1fced48c52ed03}} 
+\index{TowerSimple@{TowerSimple}!startRaload@{startRaload}}
+\index{startRaload@{startRaload}!TowerSimple@{TowerSimple}}
+\doxysubsubsection{\texorpdfstring{startRaload()}{startRaload()}}
+{\footnotesize\ttfamily void Tower\+Simple\+::start\+Raload (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Начало перезарядки 
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+active\+Units/Tower\+Simple.\+h\item 
+active\+Units/Tower\+Simple.\+cpp\end{DoxyCompactItemize}

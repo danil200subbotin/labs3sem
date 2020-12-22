@@ -1,0 +1,27 @@
+\hypertarget{struct_f_l_a_c_____stream_metadata___vorbis_comment___entry}{}\doxysection{F\+L\+A\+C\+\_\+\+\_\+\+Stream\+Metadata\+\_\+\+Vorbis\+Comment\+\_\+\+Entry Struct Reference}
+\label{struct_f_l_a_c_____stream_metadata___vorbis_comment___entry}\index{FLAC\_\_StreamMetadata\_VorbisComment\_Entry@{FLAC\_\_StreamMetadata\_VorbisComment\_Entry}}
+
+
+{\ttfamily \#include $<$format.\+h$>$}
+
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+F\+L\+A\+C\+\_\+\+\_\+uint32 {\bfseries length}
+\item 
+F\+L\+A\+C\+\_\+\+\_\+byte $\ast$ {\bfseries entry}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Vorbis comment entry structure used in V\+O\+R\+B\+I\+S\+\_\+\+C\+O\+M\+M\+E\+NT blocks. (c.\+f. \href{../format.html\#metadata_block_vorbis_comment}{\texttt{ format specification}})
+
+For convenience, the A\+P\+Is maintain a trailing N\+UL character at the end of {\itshape entry} which is not counted toward {\itshape length}, i.\+e. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{strlen(entry) == length }
+\end{DoxyCode}
+ 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/danilmorozov/\+Desktop/labsgit/\+Tower\+Defence/\+S\+F\+M\+L.\+1/extlibs/headers/\+F\+L\+A\+C/format.\+h\end{DoxyCompactItemize}

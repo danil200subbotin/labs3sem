@@ -9,9 +9,13 @@
 #include "TowerSimple.h"
 #include "structs.h"
 
+/*!
+	\brief Класс, отавечающий за магическую башню
+
+	Относительно простой башни тут перегружена атака, а так же добавлены статические стуктуры с эффектами башен
+*/
 
 class TowerMagic: public TowerSimple {
-private:
 
 
 public:

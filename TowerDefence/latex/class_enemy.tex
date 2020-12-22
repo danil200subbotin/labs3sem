@@ -1,0 +1,120 @@
+\hypertarget{class_enemy}{}\doxysection{Enemy Class Reference}
+\label{class_enemy}\index{Enemy@{Enemy}}
+
+
+Класс, отающий за состояние одного противника  
+
+
+
+
+{\ttfamily \#include $<$Enemy.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_enemy_a0562b66062ab637cd272b258cc26da9e}{get\+Money}} () const
+\item 
+\mbox{\Hypertarget{class_enemy_a1ad32b606337271334372b0346fffa73}\label{class_enemy_a1ad32b606337271334372b0346fffa73}} 
+{\bfseries Enemy} (int x, int y, int hit\+Points, int max\+HP, float speed, int gold, float time, std\+::string name=\char`\"{}Vadim\char`\"{})
+\item 
+\mbox{\Hypertarget{class_enemy_a342051a8cf9fe6e329774e37af486fca}\label{class_enemy_a342051a8cf9fe6e329774e37af486fca}} 
+float {\bfseries get\+Speed} () const
+\item 
+\mbox{\Hypertarget{class_enemy_ae4430185f7f5ac67842e08085256b466}\label{class_enemy_ae4430185f7f5ac67842e08085256b466}} 
+void {\bfseries setX} (int newX)
+\item 
+\mbox{\Hypertarget{class_enemy_a7a65000e5b65ac01959bd2f9c70ab06e}\label{class_enemy_a7a65000e5b65ac01959bd2f9c70ab06e}} 
+void {\bfseries setY} (int newY)
+\item 
+\mbox{\Hypertarget{class_enemy_abdd71d2a54bf169ffb71801091704881}\label{class_enemy_abdd71d2a54bf169ffb71801091704881}} 
+int {\bfseries getX} ()
+\item 
+float \mbox{\hyperlink{class_enemy_ad83ccb3067869baa3517b7abaf7eca61}{get\+Speed\+Koaf}} ()
+\item 
+int \mbox{\hyperlink{class_enemy_a0ce15f25fff3111cbd59be0262154b87}{get\+Damage\+Koaf}} ()
+\item 
+\mbox{\Hypertarget{class_enemy_a056667d7235d861cdc88ecfe2341ca90}\label{class_enemy_a056667d7235d861cdc88ecfe2341ca90}} 
+int {\bfseries getY} ()
+\item 
+int \mbox{\hyperlink{class_enemy_a3977f884103870a0fbea5ce4028ebe3a}{set\+Road}} (\mbox{\hyperlink{class_road}{Road}} $\ast$road)
+\item 
+\mbox{\Hypertarget{class_enemy_a66e9103d8abc71cc669dbd2221711a29}\label{class_enemy_a66e9103d8abc71cc669dbd2221711a29}} 
+class \mbox{\hyperlink{class_road}{Road}} $\ast$ {\bfseries get\+Road} ()
+\item 
+\mbox{\Hypertarget{class_enemy_a1c38bc7e5cef191504ffd3bcb3bf9ca0}\label{class_enemy_a1c38bc7e5cef191504ffd3bcb3bf9ca0}} 
+void {\bfseries minus\+Time} (float delta\+Time)
+\item 
+\mbox{\Hypertarget{class_enemy_a991deb176d3376fb02c5c31051488660}\label{class_enemy_a991deb176d3376fb02c5c31051488660}} 
+float {\bfseries get\+Time} ()
+\item 
+int \mbox{\hyperlink{class_enemy_a0511ee0b27a6ac7ffbb459442e273b06}{is\+Magic\+Effect}} () const
+\item 
+\mbox{\Hypertarget{class_enemy_ad376dc43d136630916bd5d6a1dfd35cc}\label{class_enemy_ad376dc43d136630916bd5d6a1dfd35cc}} 
+int {\bfseries get\+HP} () const
+\item 
+\mbox{\Hypertarget{class_enemy_a250c9c5368eaf2b973e4ff7f0d503d41}\label{class_enemy_a250c9c5368eaf2b973e4ff7f0d503d41}} 
+void {\bfseries draw} (sf\+::\+Render\+Window $\ast$window, sf\+::\+Text $\ast$text)
+\item 
+\mbox{\Hypertarget{class_enemy_af47b9cdc2a3994d4b0ef8cd1fd47ec72}\label{class_enemy_af47b9cdc2a3994d4b0ef8cd1fd47ec72}} 
+int {\bfseries add\+Effect} (struct \mbox{\hyperlink{struct_effect}{Effect}} const, int effect\+Type, int red, int green, int blue)
+\item 
+int \mbox{\hyperlink{class_enemy_ab4c4e35b4df154a91daee58a9bd12bce}{damage}} (int damage, int red, int green, int blue)
+\item 
+int \mbox{\hyperlink{class_enemy_a4002716f4c338db4f7c9f56dfde2385b}{chek\+And\+Delete\+Effects}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс, отающий за состояние одного противника 
+
+Данный класс необходим для взаимодействия с противкиками и передвижением проиивников по карте 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_enemy_a4002716f4c338db4f7c9f56dfde2385b}\label{class_enemy_a4002716f4c338db4f7c9f56dfde2385b}} 
+\index{Enemy@{Enemy}!chekAndDeleteEffects@{chekAndDeleteEffects}}
+\index{chekAndDeleteEffects@{chekAndDeleteEffects}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{chekAndDeleteEffects()}{chekAndDeleteEffects()}}
+{\footnotesize\ttfamily int Enemy\+::chek\+And\+Delete\+Effects (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Проверка актуальности эффектов и ихудаление при обратном \mbox{\Hypertarget{class_enemy_ab4c4e35b4df154a91daee58a9bd12bce}\label{class_enemy_ab4c4e35b4df154a91daee58a9bd12bce}} 
+\index{Enemy@{Enemy}!damage@{damage}}
+\index{damage@{damage}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{damage()}{damage()}}
+{\footnotesize\ttfamily int Enemy\+::damage (\begin{DoxyParamCaption}\item[{int}]{damage,  }\item[{int}]{red,  }\item[{int}]{green,  }\item[{int}]{blue }\end{DoxyParamCaption})}
+
+Нанесение урона противнику \mbox{\Hypertarget{class_enemy_a0ce15f25fff3111cbd59be0262154b87}\label{class_enemy_a0ce15f25fff3111cbd59be0262154b87}} 
+\index{Enemy@{Enemy}!getDamageKoaf@{getDamageKoaf}}
+\index{getDamageKoaf@{getDamageKoaf}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{getDamageKoaf()}{getDamageKoaf()}}
+{\footnotesize\ttfamily int Enemy\+::get\+Damage\+Koaf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Возвращает итоговый коэффициент урона, наложенный на противника башней и ловушкой \mbox{\Hypertarget{class_enemy_a0562b66062ab637cd272b258cc26da9e}\label{class_enemy_a0562b66062ab637cd272b258cc26da9e}} 
+\index{Enemy@{Enemy}!getMoney@{getMoney}}
+\index{getMoney@{getMoney}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{getMoney()}{getMoney()}}
+{\footnotesize\ttfamily int Enemy\+::get\+Money (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Возвращает количество средств в противнике \mbox{\Hypertarget{class_enemy_ad83ccb3067869baa3517b7abaf7eca61}\label{class_enemy_ad83ccb3067869baa3517b7abaf7eca61}} 
+\index{Enemy@{Enemy}!getSpeedKoaf@{getSpeedKoaf}}
+\index{getSpeedKoaf@{getSpeedKoaf}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{getSpeedKoaf()}{getSpeedKoaf()}}
+{\footnotesize\ttfamily float Enemy\+::get\+Speed\+Koaf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Возвращает итоговый коэффициент скорости, наложенный на противника башней и ловушкой \mbox{\Hypertarget{class_enemy_a0511ee0b27a6ac7ffbb459442e273b06}\label{class_enemy_a0511ee0b27a6ac7ffbb459442e273b06}} 
+\index{Enemy@{Enemy}!isMagicEffect@{isMagicEffect}}
+\index{isMagicEffect@{isMagicEffect}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{isMagicEffect()}{isMagicEffect()}}
+{\footnotesize\ttfamily int Enemy\+::is\+Magic\+Effect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Проверяет наличие магических эффектов над противником \mbox{\Hypertarget{class_enemy_a3977f884103870a0fbea5ce4028ebe3a}\label{class_enemy_a3977f884103870a0fbea5ce4028ebe3a}} 
+\index{Enemy@{Enemy}!setRoad@{setRoad}}
+\index{setRoad@{setRoad}!Enemy@{Enemy}}
+\doxysubsubsection{\texorpdfstring{setRoad()}{setRoad()}}
+{\footnotesize\ttfamily int Enemy\+::set\+Road (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_road}{Road}} $\ast$}]{road }\end{DoxyParamCaption})}
+
+Показавает противнику, на какой дороге он находится 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+active\+Units/Enemy.\+h\item 
+active\+Units/Enemy.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,132 @@
+\hypertarget{class_landscape}{}\doxysection{Landscape Class Reference}
+\label{class_landscape}\index{Landscape@{Landscape}}
+
+
+Класс-\/контейнер, отавечающий за работу всего вместе.  
+
+
+
+
+{\ttfamily \#include $<$Landscape.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_landscape_a1832ae47b235feb8fa2ef7910209f084}\label{class_landscape_a1832ae47b235feb8fa2ef7910209f084}} 
+{\bfseries Landscape} (int, int)
+\item 
+\mbox{\Hypertarget{class_landscape_ade70a2a43ef8c8f0ee1620073ee0c19b}\label{class_landscape_ade70a2a43ef8c8f0ee1620073ee0c19b}} 
+int {\bfseries get\+SizeX} () const
+\item 
+\mbox{\Hypertarget{class_landscape_a4647f297e941b13aa843301759da5e56}\label{class_landscape_a4647f297e941b13aa843301759da5e56}} 
+int {\bfseries get\+SizeY} () const
+\item 
+\mbox{\Hypertarget{class_landscape_a67716ebb2619daad3323c0fcd6634b18}\label{class_landscape_a67716ebb2619daad3323c0fcd6634b18}} 
+void {\bfseries draw\+Castle} (sf\+::\+Render\+Window $\ast$window, sf\+::\+Text $\ast$text)
+\item 
+\mbox{\Hypertarget{class_landscape_ab4f9ea9658f004682653496f7b9323a1}\label{class_landscape_ab4f9ea9658f004682653496f7b9323a1}} 
+void {\bfseries draw\+Lair} (sf\+::\+Render\+Window $\ast$window)
+\item 
+\mbox{\Hypertarget{class_landscape_ad1920d9670ab114d500be9ab5285b8f7}\label{class_landscape_ad1920d9670ab114d500be9ab5285b8f7}} 
+void {\bfseries draw\+Road} (sf\+::\+Render\+Window $\ast$window)
+\item 
+\mbox{\Hypertarget{class_landscape_a36c132ddda4133954fee65863f274e25}\label{class_landscape_a36c132ddda4133954fee65863f274e25}} 
+void {\bfseries draw\+Forest} (sf\+::\+Render\+Window $\ast$window)
+\item 
+\mbox{\Hypertarget{class_landscape_a73343bc61df94fd48f86eba68dc67868}\label{class_landscape_a73343bc61df94fd48f86eba68dc67868}} 
+void {\bfseries draw\+Enemies} (sf\+::\+Render\+Window $\ast$window, sf\+::\+Text $\ast$text)
+\item 
+\mbox{\Hypertarget{class_landscape_a8cdfedc4caa155dddfd7575fdcfffdde}\label{class_landscape_a8cdfedc4caa155dddfd7575fdcfffdde}} 
+void {\bfseries draw\+Towers} (sf\+::\+Render\+Window $\ast$window)
+\item 
+\mbox{\Hypertarget{class_landscape_ab837faf79b41094be55136210a377569}\label{class_landscape_ab837faf79b41094be55136210a377569}} 
+int {\bfseries get\+CastleX} () const
+\item 
+\mbox{\Hypertarget{class_landscape_a90616ea7cd298e5cc66e4f533b585fb8}\label{class_landscape_a90616ea7cd298e5cc66e4f533b585fb8}} 
+int {\bfseries get\+CastleY} () const
+\item 
+int \mbox{\hyperlink{class_landscape_ae5bb2fcb6a954c58446fa3f60cabed2a}{update\+Enemies}} (float)
+\item 
+\mbox{\Hypertarget{class_landscape_a6907f959cdeb8ccd8e84544b249a7701}\label{class_landscape_a6907f959cdeb8ccd8e84544b249a7701}} 
+int {\bfseries set\+Tower} (int, int, int)
+\item 
+int \mbox{\hyperlink{class_landscape_a0a9ffeb8d505959ed1bdd62ad6a7affd}{push\+Enemy}} (int x, int y, int hit\+Points, int max\+HP, float speed, int gold, float time)
+\item 
+int \mbox{\hyperlink{class_landscape_a4154498bb884406dcf5bd5e9cbee8bc5}{add\+Tower}} (int x, int y, int type, std\+::list$<$ \mbox{\hyperlink{class_road}{Road}} $\ast$ $>$ $\ast$road\+List)
+\item 
+\mbox{\Hypertarget{class_landscape_a29fc3a21f77392df88c8c9bf52d4daa9}\label{class_landscape_a29fc3a21f77392df88c8c9bf52d4daa9}} 
+int {\bfseries get\+Gold} ()
+\item 
+\mbox{\Hypertarget{class_landscape_abf7cbdbcbf4838b120aaedca6f739621}\label{class_landscape_abf7cbdbcbf4838b120aaedca6f739621}} 
+bool {\bfseries is\+Forest} (int x, int y)
+\item 
+\mbox{\Hypertarget{class_landscape_a10dfe17e1af93401735160a4d81bc90a}\label{class_landscape_a10dfe17e1af93401735160a4d81bc90a}} 
+bool {\bfseries is\+Road} (int x, int y)
+\item 
+\mbox{\Hypertarget{class_landscape_ac4ae3d3dafafd7874ade2aa4b8a15098}\label{class_landscape_ac4ae3d3dafafd7874ade2aa4b8a15098}} 
+bool {\bfseries is\+TowerS} (int x, int y)
+\item 
+\mbox{\Hypertarget{class_landscape_a95ed7b576707559cfe3110ae41c7fbd8}\label{class_landscape_a95ed7b576707559cfe3110ae41c7fbd8}} 
+bool {\bfseries is\+TowerM} (int x, int y)
+\item 
+\mbox{\Hypertarget{class_landscape_a345445971fc30e049a1fa85c70bad74e}\label{class_landscape_a345445971fc30e049a1fa85c70bad74e}} 
+bool {\bfseries is\+TowerT} (int x, int y)
+\item 
+\mbox{\Hypertarget{class_landscape_a1c0eab7f74f250f78ed2c7e750756174}\label{class_landscape_a1c0eab7f74f250f78ed2c7e750756174}} 
+bool {\bfseries is\+Tower} (int x, int y)
+\item 
+int \mbox{\hyperlink{class_landscape_a3d01d2fd80f2a780d917623380d0ab68}{update\+Tower}} (int x, int y)
+\item 
+\mbox{\Hypertarget{class_landscape_a60182dd5d34882c113a0ba9157d3f361}\label{class_landscape_a60182dd5d34882c113a0ba9157d3f361}} 
+std\+::list$<$ \mbox{\hyperlink{class_road}{Road}} $\ast$ $>$ $\ast$ {\bfseries get\+Road} ()
+\item 
+void \mbox{\hyperlink{class_landscape_aa06206c9319a1e93d364a2c9549afca9}{fire}} (float time)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс-\/контейнер, отавечающий за работу всего вместе. 
+
+Содержит\+: Размеры Карты, Указатель на первую дорогу от логова, Указатель на замок, Указатель на логово
+
+Содержит списки\+: Простых башен, Магических башен, ловушек, леса, дорог, врагов
+
+Конструктор данного класса создает необходимые для игры вещи 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_landscape_a4154498bb884406dcf5bd5e9cbee8bc5}\label{class_landscape_a4154498bb884406dcf5bd5e9cbee8bc5}} 
+\index{Landscape@{Landscape}!addTower@{addTower}}
+\index{addTower@{addTower}!Landscape@{Landscape}}
+\doxysubsubsection{\texorpdfstring{addTower()}{addTower()}}
+{\footnotesize\ttfamily int Landscape\+::add\+Tower (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{type,  }\item[{std\+::list$<$ \mbox{\hyperlink{class_road}{Road}} $\ast$ $>$ $\ast$}]{road\+List }\end{DoxyParamCaption})}
+
+Добавление башни \mbox{\Hypertarget{class_landscape_aa06206c9319a1e93d364a2c9549afca9}\label{class_landscape_aa06206c9319a1e93d364a2c9549afca9}} 
+\index{Landscape@{Landscape}!fire@{fire}}
+\index{fire@{fire}!Landscape@{Landscape}}
+\doxysubsubsection{\texorpdfstring{fire()}{fire()}}
+{\footnotesize\ttfamily void Landscape\+::fire (\begin{DoxyParamCaption}\item[{float}]{time }\end{DoxyParamCaption})}
+
+Огонь из всех орудий и ловушек (если выполнены условия) \mbox{\Hypertarget{class_landscape_a0a9ffeb8d505959ed1bdd62ad6a7affd}\label{class_landscape_a0a9ffeb8d505959ed1bdd62ad6a7affd}} 
+\index{Landscape@{Landscape}!pushEnemy@{pushEnemy}}
+\index{pushEnemy@{pushEnemy}!Landscape@{Landscape}}
+\doxysubsubsection{\texorpdfstring{pushEnemy()}{pushEnemy()}}
+{\footnotesize\ttfamily int Landscape\+::push\+Enemy (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{hit\+Points,  }\item[{int}]{max\+HP,  }\item[{float}]{speed,  }\item[{int}]{gold,  }\item[{float}]{time }\end{DoxyParamCaption})}
+
+Добавление противника из логова на дорогу \mbox{\Hypertarget{class_landscape_ae5bb2fcb6a954c58446fa3f60cabed2a}\label{class_landscape_ae5bb2fcb6a954c58446fa3f60cabed2a}} 
+\index{Landscape@{Landscape}!updateEnemies@{updateEnemies}}
+\index{updateEnemies@{updateEnemies}!Landscape@{Landscape}}
+\doxysubsubsection{\texorpdfstring{updateEnemies()}{updateEnemies()}}
+{\footnotesize\ttfamily int Landscape\+::update\+Enemies (\begin{DoxyParamCaption}\item[{float}]{time }\end{DoxyParamCaption})}
+
+Обновляет позиции проивников на карте \mbox{\Hypertarget{class_landscape_a3d01d2fd80f2a780d917623380d0ab68}\label{class_landscape_a3d01d2fd80f2a780d917623380d0ab68}} 
+\index{Landscape@{Landscape}!updateTower@{updateTower}}
+\index{updateTower@{updateTower}!Landscape@{Landscape}}
+\doxysubsubsection{\texorpdfstring{updateTower()}{updateTower()}}
+{\footnotesize\ttfamily int Landscape\+::update\+Tower (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+Улучшение башни 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Land/Landscape.\+h\item 
+Land/Landscape.\+cpp\end{DoxyCompactItemize}

@@ -8,6 +8,10 @@
 #include "Tower.h"
 
 
+/*!
+	\brief Таблица эффектов обыкновенной башни
+ */
+
 struct TowerLevel{
     int damage;
 
@@ -22,6 +26,11 @@ struct TowerLevel{
     std::string PATH;
 };
 
+/*!
+	\brief Класс, отавечающий за обычную башню
+
+	Тут определяются все виртуальные методы абстрактного класса Башня.
+*/
 
 class TowerSimple: public Tower{
 private:
@@ -35,19 +44,47 @@ public:
 
     TowerSimple(int x, int y, std::list <Road*> *roadList);
 
+    /*!
+    Башня производит выстрел в противника с наименьшим количеством HP из радиуса ее действия
+    */
     int attack() override;
+
+    /*!
+   Увеличивает уровень башни, если достаточно средств
+     \param[in] amountGold количетво средств в замке
+   */
 
     int levelUp(int amountGold) final;
 
+    /*!
+    Возвращает радиус действия башни
+    */
+
     int getRange() override;
+
+    /*!
+    Возвращает текущий урон от башни
+    */
 
     int getDamage() override;
 
     int getCost();
 
+    /*!
+    Позволяет встат башне на перезарядку
+    */
+
     int getCollDown () { return cooldown; };
 
+    /*!
+    Уменьшает перезарядку
+    */
+
     void minusCoolDown (float);
+
+    /*!
+    Начало перезарядки
+    */
 
     void startRaload ();
 };

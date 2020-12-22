@@ -1,0 +1,141 @@
+\hypertarget{classsf_1_1priv_1_1_h_i_d_input_manager}{}\doxysection{sf\+::priv\+::H\+I\+D\+Input\+Manager Class Reference}
+\label{classsf_1_1priv_1_1_h_i_d_input_manager}\index{sf::priv::HIDInputManager@{sf::priv::HIDInputManager}}
+
+
+\mbox{\hyperlink{classsf_1_1priv_1_1_input_impl}{sf\+::priv\+::\+Input\+Impl}} helper  
+
+
+
+
+{\ttfamily \#include $<$H\+I\+D\+Input\+Manager.\+hpp$>$}
+
+Inheritance diagram for sf\+::priv\+::H\+I\+D\+Input\+Manager\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classsf_1_1priv_1_1_h_i_d_input_manager}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classsf_1_1priv_1_1_h_i_d_input_manager_a17fc2ce10d0a1a24948b941460e5b94e}{is\+Key\+Pressed}} (\mbox{\hyperlink{classsf_1_1_keyboard_acb4cacd7cc5802dec45724cf3314a142}{Keyboard\+::\+Key}} key)
+\begin{DoxyCompactList}\small\item\em Check if a key is pressed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classsf_1_1priv_1_1_h_i_d_input_manager}{H\+I\+D\+Input\+Manager}} \& \mbox{\hyperlink{classsf_1_1priv_1_1_h_i_d_input_manager_a1fa701041e916a3dae97e45d85ee37b5}{get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em Get the unique instance of the class. \end{DoxyCompactList}\item 
+static long \mbox{\hyperlink{classsf_1_1priv_1_1_h_i_d_input_manager_a8f2bf16875b43cc8155502fb50c62eb9}{get\+Location\+ID}} (I\+O\+H\+I\+D\+Device\+Ref device)
+\begin{DoxyCompactList}\small\item\em Get the usb location ID of a given device. \end{DoxyCompactList}\item 
+static C\+F\+Dictionary\+Ref \mbox{\hyperlink{classsf_1_1priv_1_1_h_i_d_input_manager_ac732d0f7c0d767b23b69bf34942e2993}{copy\+Devices\+Mask}} (U\+Int32 page, U\+Int32 usage)
+\begin{DoxyCompactList}\small\item\em Create a mask (dictionary) for an I\+O\+H\+I\+D\+Manager. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classsf_1_1_keyboard_acb4cacd7cc5802dec45724cf3314a142}{Keyboard\+::\+Key}} \mbox{\hyperlink{classsf_1_1priv_1_1_h_i_d_input_manager_aeef6281821e4428b7470926d6bc58551}{localized\+Keys}} (Uni\+Char ch)
+\item 
+static \mbox{\hyperlink{classsf_1_1_keyboard_acb4cacd7cc5802dec45724cf3314a142}{Keyboard\+::\+Key}} \mbox{\hyperlink{classsf_1_1priv_1_1_h_i_d_input_manager_a9c6173f907f6238f806637b60fdb0d0f}{non\+Localized\+Keys}} (Uni\+Char virtual\+Keycode)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classsf_1_1priv_1_1_input_impl}{sf\+::priv\+::\+Input\+Impl}} helper 
+
+This class manage as a singleton instance the keyboard state. Its purpose is to help \mbox{\hyperlink{classsf_1_1priv_1_1_input_impl}{sf\+::priv\+::\+Input\+Impl}} class. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsf_1_1priv_1_1_h_i_d_input_manager_ac732d0f7c0d767b23b69bf34942e2993}\label{classsf_1_1priv_1_1_h_i_d_input_manager_ac732d0f7c0d767b23b69bf34942e2993}} 
+\index{sf::priv::HIDInputManager@{sf::priv::HIDInputManager}!copyDevicesMask@{copyDevicesMask}}
+\index{copyDevicesMask@{copyDevicesMask}!sf::priv::HIDInputManager@{sf::priv::HIDInputManager}}
+\doxysubsubsection{\texorpdfstring{copyDevicesMask()}{copyDevicesMask()}}
+{\footnotesize\ttfamily C\+F\+Dictionary\+Ref sf\+::priv\+::\+H\+I\+D\+Input\+Manager\+::copy\+Devices\+Mask (\begin{DoxyParamCaption}\item[{U\+Int32}]{page,  }\item[{U\+Int32}]{usage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a mask (dictionary) for an I\+O\+H\+I\+D\+Manager. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em page} & H\+ID page \\
+\hline
+{\em usage} & H\+ID usage page \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a retained C\+F\+Dictionary\+Ref 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classsf_1_1priv_1_1_h_i_d_input_manager_a1fa701041e916a3dae97e45d85ee37b5}\label{classsf_1_1priv_1_1_h_i_d_input_manager_a1fa701041e916a3dae97e45d85ee37b5}} 
+\index{sf::priv::HIDInputManager@{sf::priv::HIDInputManager}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!sf::priv::HIDInputManager@{sf::priv::HIDInputManager}}
+\doxysubsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsf_1_1priv_1_1_h_i_d_input_manager}{H\+I\+D\+Input\+Manager}} \& sf\+::priv\+::\+H\+I\+D\+Input\+Manager\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the unique instance of the class. 
+
+\begin{DoxyNote}{Note}
+Private use only
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+Reference to the \mbox{\hyperlink{classsf_1_1priv_1_1_h_i_d_input_manager}{H\+I\+D\+Input\+Manager}} instance 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classsf_1_1priv_1_1_h_i_d_input_manager_a8f2bf16875b43cc8155502fb50c62eb9}\label{classsf_1_1priv_1_1_h_i_d_input_manager_a8f2bf16875b43cc8155502fb50c62eb9}} 
+\index{sf::priv::HIDInputManager@{sf::priv::HIDInputManager}!getLocationID@{getLocationID}}
+\index{getLocationID@{getLocationID}!sf::priv::HIDInputManager@{sf::priv::HIDInputManager}}
+\doxysubsubsection{\texorpdfstring{getLocationID()}{getLocationID()}}
+{\footnotesize\ttfamily long sf\+::priv\+::\+H\+I\+D\+Input\+Manager\+::get\+Location\+ID (\begin{DoxyParamCaption}\item[{I\+O\+H\+I\+D\+Device\+Ref}]{device }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get the usb location ID of a given device. 
+
+This location ID is unique and can be used a usb port identifier
+
+
+\begin{DoxyParams}{Parameters}
+{\em device} & H\+ID device to query \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the device\textquotesingle{}s location ID or 0 if something went wrong 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classsf_1_1priv_1_1_h_i_d_input_manager_a17fc2ce10d0a1a24948b941460e5b94e}\label{classsf_1_1priv_1_1_h_i_d_input_manager_a17fc2ce10d0a1a24948b941460e5b94e}} 
+\index{sf::priv::HIDInputManager@{sf::priv::HIDInputManager}!isKeyPressed@{isKeyPressed}}
+\index{isKeyPressed@{isKeyPressed}!sf::priv::HIDInputManager@{sf::priv::HIDInputManager}}
+\doxysubsubsection{\texorpdfstring{isKeyPressed()}{isKeyPressed()}}
+{\footnotesize\ttfamily bool sf\+::priv\+::\+H\+I\+D\+Input\+Manager\+::is\+Key\+Pressed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsf_1_1_keyboard_acb4cacd7cc5802dec45724cf3314a142}{Keyboard\+::\+Key}}}]{key }\end{DoxyParamCaption})}
+
+
+
+Check if a key is pressed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & Key to check\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the key is pressed, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classsf_1_1priv_1_1_h_i_d_input_manager_aeef6281821e4428b7470926d6bc58551}\label{classsf_1_1priv_1_1_h_i_d_input_manager_aeef6281821e4428b7470926d6bc58551}} 
+\index{sf::priv::HIDInputManager@{sf::priv::HIDInputManager}!localizedKeys@{localizedKeys}}
+\index{localizedKeys@{localizedKeys}!sf::priv::HIDInputManager@{sf::priv::HIDInputManager}}
+\doxysubsubsection{\texorpdfstring{localizedKeys()}{localizedKeys()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsf_1_1_keyboard_acb4cacd7cc5802dec45724cf3314a142}{Keyboard\+::\+Key}} sf\+::priv\+::\+H\+I\+D\+Input\+Manager\+::localized\+Keys (\begin{DoxyParamCaption}\item[{Uni\+Char}]{ch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Try to convert a character into a S\+F\+ML key code.
+
+Return \mbox{\hyperlink{classsf_1_1_keyboard_acb4cacd7cc5802dec45724cf3314a142a840c43fa8e05ff854f6fe9a86c7c939e}{sf\+::\+Keyboard\+::\+Unknown}} if it doesn\textquotesingle{}t match any \textquotesingle{}localized\textquotesingle{} keys.
+
+By \textquotesingle{}localized\textquotesingle{} I mean keys that depend on the keyboard layout and might not be the same as the US keycode in some country (e.\+g. the keys \textquotesingle{}Y\textquotesingle{} and \textquotesingle{}Z\textquotesingle{} are switched on Q\+W\+E\+R\+TZ keyboard and US keyboard layouts.) \mbox{\Hypertarget{classsf_1_1priv_1_1_h_i_d_input_manager_a9c6173f907f6238f806637b60fdb0d0f}\label{classsf_1_1priv_1_1_h_i_d_input_manager_a9c6173f907f6238f806637b60fdb0d0f}} 
+\index{sf::priv::HIDInputManager@{sf::priv::HIDInputManager}!nonLocalizedKeys@{nonLocalizedKeys}}
+\index{nonLocalizedKeys@{nonLocalizedKeys}!sf::priv::HIDInputManager@{sf::priv::HIDInputManager}}
+\doxysubsubsection{\texorpdfstring{nonLocalizedKeys()}{nonLocalizedKeys()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classsf_1_1_keyboard_acb4cacd7cc5802dec45724cf3314a142}{Keyboard\+::\+Key}} sf\+::priv\+::\+H\+I\+D\+Input\+Manager\+::non\+Localized\+Keys (\begin{DoxyParamCaption}\item[{Uni\+Char}]{virtual\+Keycode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Try to convert a virtual keycode into a S\+F\+ML key code.
+
+Return \mbox{\hyperlink{classsf_1_1_keyboard_acb4cacd7cc5802dec45724cf3314a142a840c43fa8e05ff854f6fe9a86c7c939e}{sf\+::\+Keyboard\+::\+Unknown}} if the keycode is unknown. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/danilmorozov/\+Desktop/labsgit/\+Tower\+Defence/\+S\+F\+M\+L.\+1/src/\+S\+F\+M\+L/\+Window/\+O\+S\+X/H\+I\+D\+Input\+Manager.\+hpp\item 
+/\+Users/danilmorozov/\+Desktop/labsgit/\+Tower\+Defence/\+S\+F\+M\+L.\+1/src/\+S\+F\+M\+L/\+Window/\+O\+S\+X/H\+I\+D\+Input\+Manager.\+mm\end{DoxyCompactItemize}

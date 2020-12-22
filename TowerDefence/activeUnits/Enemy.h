@@ -12,6 +12,12 @@
 #include <utility>
 #include "../Stack.h"
 
+/*!
+	\brief Класс, отающий за состояние одного противника
+
+	Данный класс необходим для взаимодействия с противкиками и передвижением проиивников по карте
+*/
+
 
 class Enemy {
 private:
@@ -44,6 +50,11 @@ private:
 
 public:
 
+    /*!
+   Возвращает количество средств в противнике
+   */
+
+
     int getMoney() const { return gold; };
 
     Enemy(int x, int y, int hitPoints, int maxHP, float speed, int gold, float time, std::string name = "Vadim");
@@ -56,11 +67,24 @@ public:
 
     int getX() { return x; };
 
+    /*!
+   Возвращает итоговый коэффициент скорости, наложенный на противника башней и ловушкой
+   */
+
+
     float getSpeedKoaf();
+
+    /*!
+   Возвращает итоговый коэффициент урона, наложенный на противника башней и ловушкой
+   */
 
     int getDamageKoaf();
 
     int getY() { return y; };
+
+    /*!
+   Показавает противнику, на какой дороге он находится
+   */
 
     int setRoad(Road* road);
 
@@ -70,6 +94,10 @@ public:
 
     float getTime() { return timeBeforePop; };
 
+    /*!
+  Проверяет наличие магических эффектов над противником
+  */
+
     int isMagicEffect() const;
 
     int getHP() const;
@@ -78,7 +106,15 @@ public:
 
     int addEffect (struct Effect const, int effectType, int red, int green, int blue);
 
+    /*!
+ Нанесение урона противнику
+  */
+
     int damage (int damage, int red, int green, int blue);
+
+    /*!
+Проверка актуальности эффектов и ихудаление при обратном
+ */
 
     int chekAndDeleteEffects ();
 };

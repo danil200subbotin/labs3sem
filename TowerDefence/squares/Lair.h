@@ -15,6 +15,12 @@ struct enemyTime{
     Enemy* enemy;
 };
 
+/*!
+	\brief Класс-логово.
+
+	Содержит:
+    Этот класс содержт в себе список структур, содержащих ссылки на врагов и всемя до их выхода из логова
+*/
 
 class EnemiesLair: public Square {
 private:
@@ -26,7 +32,14 @@ private:
 public:
     EnemiesLair(int, int);
 
+    /*!
+  Добавление противника в логово
+  */
     int pushEnemy (struct enemyTime& enemyTime);
+
+    /*!
+ Достаем на дорогу следующего противника
+  */
 
     int popNext();
 

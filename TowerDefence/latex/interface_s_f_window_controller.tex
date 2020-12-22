@@ -1,0 +1,98 @@
+\hypertarget{interface_s_f_window_controller}{}\doxysection{S\+F\+Window\+Controller Class Reference}
+\label{interface_s_f_window_controller}\index{SFWindowController@{SFWindowController}}
+
+
+Implementation of \mbox{\hyperlink{protocol_window_impl_delegate_protocol-p}{Window\+Impl\+Delegate\+Protocol}} for window management.  
+
+
+
+
+{\ttfamily \#import $<$S\+F\+Window\+Controller.\+h$>$}
+
+Inheritance diagram for S\+F\+Window\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.895093cm]{interface_s_f_window_controller}
+\end{center}
+\end{figure}
+\doxysubsection*{Instance Methods}
+\begin{DoxyCompactItemize}
+\item 
+(id) -\/ \mbox{\hyperlink{interface_s_f_window_controller_a475122631efa76a12ab6d04691763d52}{init\+With\+Window\+:}}
+\begin{DoxyCompactList}\small\item\em Create the S\+F\+ML window with an external Cocoa window. \end{DoxyCompactList}\item 
+(id) -\/ \mbox{\hyperlink{interface_s_f_window_controller_afb6077b5211af9ff5533848af6f7cccc}{init\+With\+Mode\+:and\+Style\+:}}
+\begin{DoxyCompactList}\small\item\em Create the S\+F\+ML window \char`\"{}from scratch\char`\"{} (S\+F\+ML handle everything) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{interface_s_f_window_controller_a8264c79174a03b07a1f1345f87d828b2}\label{interface_s_f_window_controller_a8264c79174a03b07a1f1345f87d828b2}} 
+N\+S\+Window $\ast$ \mbox{\hyperlink{interface_s_f_window_controller_a8264c79174a03b07a1f1345f87d828b2}{m\+\_\+window}}
+\begin{DoxyCompactList}\small\item\em Underlying Cocoa window to be controlled. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{interface_s_f_window_controller_abd49f9442415665ff38a863620fab828}\label{interface_s_f_window_controller_abd49f9442415665ff38a863620fab828}} 
+\mbox{\hyperlink{interface_s_f_open_g_l_view}{S\+F\+Open\+G\+L\+View}} $\ast$ \mbox{\hyperlink{interface_s_f_window_controller_abd49f9442415665ff38a863620fab828}{m\+\_\+ogl\+View}}
+\begin{DoxyCompactList}\small\item\em Open\+GL view for rendering. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{interface_s_f_window_controller_a9f5db6d13416eb609344a2097a368b5b}\label{interface_s_f_window_controller_a9f5db6d13416eb609344a2097a368b5b}} 
+\mbox{\hyperlink{classsf_1_1priv_1_1_window_impl_cocoa}{sf\+::priv\+::\+Window\+Impl\+Cocoa}} $\ast$ \mbox{\hyperlink{interface_s_f_window_controller_a9f5db6d13416eb609344a2097a368b5b}{m\+\_\+requester}}
+\begin{DoxyCompactList}\small\item\em Requester. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{interface_s_f_window_controller_ab895f16bc34772034a050a290dd40c27}\label{interface_s_f_window_controller_ab895f16bc34772034a050a290dd40c27}} 
+B\+O\+OL \mbox{\hyperlink{interface_s_f_window_controller_ab895f16bc34772034a050a290dd40c27}{m\+\_\+fullscreen}}
+\begin{DoxyCompactList}\small\item\em Indicate whether the window is fullscreen or not. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{interface_s_f_window_controller_ae17f2f71d3451997c5f31eaba0c05e3d}\label{interface_s_f_window_controller_ae17f2f71d3451997c5f31eaba0c05e3d}} 
+B\+O\+OL \mbox{\hyperlink{interface_s_f_window_controller_ae17f2f71d3451997c5f31eaba0c05e3d}{m\+\_\+restore\+Resize}}
+\begin{DoxyCompactList}\small\item\em See note above. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implementation of \mbox{\hyperlink{protocol_window_impl_delegate_protocol-p}{Window\+Impl\+Delegate\+Protocol}} for window management. 
+
+Key, mouse and Window focus events are delegated to its view, \mbox{\hyperlink{interface_s_f_open_g_l_view}{S\+F\+Open\+G\+L\+View}}.
+
+Used when S\+F\+ML handle everything and when a N\+S\+Window$\ast$ is given as handle to Window\+Impl.
+
+When grabbing the cursor, if the window is resizeable, m\+\_\+restore\+Resize is set to Y\+ES and the window is marked as not resizeable. This is to prevent accidental resize by the user. When the cursor is released, the window style is restored. 
+
+\doxysubsection{Method Documentation}
+\mbox{\Hypertarget{interface_s_f_window_controller_afb6077b5211af9ff5533848af6f7cccc}\label{interface_s_f_window_controller_afb6077b5211af9ff5533848af6f7cccc}} 
+\index{SFWindowController@{SFWindowController}!initWithMode:andStyle:@{initWithMode:andStyle:}}
+\index{initWithMode:andStyle:@{initWithMode:andStyle:}!SFWindowController@{SFWindowController}}
+\doxysubsubsection{\texorpdfstring{initWithMode:andStyle:}{initWithMode:andStyle:}}
+{\footnotesize\ttfamily -\/ (id) init\+With\+Mode\+: \begin{DoxyParamCaption}\item[{(const \mbox{\hyperlink{classsf_1_1_video_mode}{sf\+::\+Video\+Mode}}\&)}]{mode }\item[{and\+Style\+:(unsigned long)}]{style }\end{DoxyParamCaption}}
+
+
+
+Create the S\+F\+ML window \char`\"{}from scratch\char`\"{} (S\+F\+ML handle everything) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & Video mode \\
+\hline
+{\em style} & Window\textquotesingle{}s style, as described by sf\+::\+Style\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an initialized controller 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interface_s_f_window_controller_a475122631efa76a12ab6d04691763d52}\label{interface_s_f_window_controller_a475122631efa76a12ab6d04691763d52}} 
+\index{SFWindowController@{SFWindowController}!initWithWindow:@{initWithWindow:}}
+\index{initWithWindow:@{initWithWindow:}!SFWindowController@{SFWindowController}}
+\doxysubsubsection{\texorpdfstring{initWithWindow:}{initWithWindow:}}
+{\footnotesize\ttfamily -\/ (id) init\+With\+Window\+: \begin{DoxyParamCaption}\item[{(N\+S\+Window$\ast$)}]{window }\end{DoxyParamCaption}}
+
+
+
+Create the S\+F\+ML window with an external Cocoa window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em window} & Cocoa window to be controlled\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an initialized controller 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/danilmorozov/\+Desktop/labsgit/\+Tower\+Defence/\+S\+F\+M\+L.\+1/src/\+S\+F\+M\+L/\+Window/\+O\+S\+X/S\+F\+Window\+Controller.\+h\item 
+/\+Users/danilmorozov/\+Desktop/labsgit/\+Tower\+Defence/\+S\+F\+M\+L.\+1/src/\+S\+F\+M\+L/\+Window/\+O\+S\+X/S\+F\+Window\+Controller.\+mm\end{DoxyCompactItemize}

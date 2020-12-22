@@ -1,0 +1,62 @@
+\hypertarget{class_tower_trap}{}\doxysection{Tower\+Trap Class Reference}
+\label{class_tower_trap}\index{TowerTrap@{TowerTrap}}
+
+
+Класс, отавечающий за ловушки  
+
+
+
+
+{\ttfamily \#include $<$Tower\+Trap.\+h$>$}
+
+Inheritance diagram for Tower\+Trap\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_tower_trap}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_tower_trap_aac0a2775f3bcf37309024d52f39092f2}\label{class_tower_trap_aac0a2775f3bcf37309024d52f39092f2}} 
+{\bfseries Tower\+Trap} (int x, int y, std\+::list$<$ \mbox{\hyperlink{class_road}{Road}} $\ast$ $>$ $\ast$road\+List)
+\item 
+int \mbox{\hyperlink{class_tower_trap_aab8f3f9422348e3ba6e2fbde6240b726}{get\+Range}} () override
+\item 
+int \mbox{\hyperlink{class_tower_trap_a921c895aa92da7971eeef56e419f5da9}{attack}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Класс, отавечающий за ловушки 
+
+Относительно простой башни тут перегружена атака, а так же добавлены статические стуктуры с эффектами башен. + добавлен индикатор взорванности 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_tower_trap_a921c895aa92da7971eeef56e419f5da9}\label{class_tower_trap_a921c895aa92da7971eeef56e419f5da9}} 
+\index{TowerTrap@{TowerTrap}!attack@{attack}}
+\index{attack@{attack}!TowerTrap@{TowerTrap}}
+\doxysubsubsection{\texorpdfstring{attack()}{attack()}}
+{\footnotesize\ttfamily int Tower\+Trap\+::attack (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Башня производит выстрел в противника с наименьшим количеством HP из радиуса ее действия 
+
+Reimplemented from \mbox{\hyperlink{class_tower_simple_a6f67a28037cb7a72c84c0028c9e09dbf}{Tower\+Simple}}.
+
+\mbox{\Hypertarget{class_tower_trap_aab8f3f9422348e3ba6e2fbde6240b726}\label{class_tower_trap_aab8f3f9422348e3ba6e2fbde6240b726}} 
+\index{TowerTrap@{TowerTrap}!getRange@{getRange}}
+\index{getRange@{getRange}!TowerTrap@{TowerTrap}}
+\doxysubsubsection{\texorpdfstring{getRange()}{getRange()}}
+{\footnotesize\ttfamily int Tower\+Trap\+::get\+Range (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Возвращает радиус действия башни 
+
+Reimplemented from \mbox{\hyperlink{class_tower_simple_a45265e84214c194f2ba891ee47e26fc2}{Tower\+Simple}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+active\+Units/Tower\+Trap.\+h\item 
+active\+Units/Tower\+Trap.\+cpp\end{DoxyCompactItemize}
